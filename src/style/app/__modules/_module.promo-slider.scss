@@ -1,0 +1,118 @@
+.promo-slider {
+  position: relative;
+  padding-top: 310px;
+  padding-bottom: 40px;
+
+  & input[type=radio] {
+    display: none;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__slides {
+    max-height: 215px;
+  }
+
+  &__slide {
+    display: none;
+    position: relative;
+    text-align: center;
+    transition: all 0.25s e('out-cubic');
+  }
+
+  &__title {
+    display: block;
+
+    margin: 0px auto 30px;
+
+    width: 675px;
+
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  &__controls {
+    position: absolute;
+    padding: 0px 25px;
+
+    bottom: 45px;
+    left: 0px;
+
+    font-size: 0px;
+
+    z-index: 120;
+
+    & label {
+      display: inline-block;
+      vertical-align: top;
+
+      margin-right: 8px;
+
+      width: 21px;
+      height: 21px;
+
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      cursor: pointer;
+
+      transition: all 0.15s e('in-cubic');
+    }
+
+    & label:hover,
+    & label:focus {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    & label:active {
+      background-color: #fff;
+    }
+  }
+
+  &__btn {
+    padding: 17px 43px;
+    height: 64px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    border-radius: 31px;
+  }
+}
+
+#btn-1:checked~.page-wrapper .promo-slider #promo-slide-1,
+#btn-2:checked~.page-wrapper .promo-slider #promo-slide-2,
+#btn-3:checked~.page-wrapper .promo-slider #promo-slide-3 {
+  display: block;
+}
+
+#btn-1:checked~.page-wrapper .promo-slider label[for="btn-1"],
+#btn-2:checked~.page-wrapper .promo-slider label[for="btn-2"],
+#btn-3:checked~.page-wrapper .promo-slider label[for="btn-3"] {
+  background-color: #fff;
+}
+
+#btn-1:checked~.page-wrapper {
+  background-color: $body-bg__1;
+  background-image: url("../img/bitmaps/icecreams-first.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#btn-2:checked~.page-wrapper {
+  background-color: $body-bg__2;
+  background-image: url("../img/bitmaps/icecreams-second.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+#btn-3:checked~.page-wrapper {
+  background-color: $body-bg__3;
+  background-image: url("../img/bitmaps/icecreams-third.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}

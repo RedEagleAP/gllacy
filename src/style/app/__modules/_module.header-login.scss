@@ -1,0 +1,74 @@
+.login {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    height: 10px;
+  }
+
+  &:hover .header__popup-wrap,
+  &:focus .header__popup-wrap {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.25s ease('out-cubic');
+    z-index: 100;
+  }
+
+  &__form {
+    display: block;
+
+    padding: 20px 17px 22px 19px;
+
+    width: 277px;
+    min-height: 214px;
+
+    background-color: $modal-bg;
+    box-shadow: $modal-box-shadow;
+    border-radius: 3px;
+    cursor: default;
+  }
+
+  &__link-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  &__btn {
+    width: 100px;
+  }
+
+  &__links {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+  }
+
+  &__link {
+    display: block;
+
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $text-dark;
+
+    &:hover,
+    &:active {
+      color: $btn-bg;
+    }
+
+    &:hover .login__link-content,
+    &:active .login__link-content {
+      border-bottom: 1px solid rgba(232, 76, 55, 0.3);
+    }
+  }
+
+  &__link-content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

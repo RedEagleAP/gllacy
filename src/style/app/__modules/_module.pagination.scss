@@ -1,0 +1,114 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 80px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+
+    padding: 4px 8px;
+    margin-right: 3px;
+
+    min-width: 18px;
+
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+
+    &:not(&--current):not(:first-child):not(:last-child):hover,
+    &:not(&--current):not(:first-child):not(:last-child):focus {
+      color: $text-light;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:not(&--current):not(:first-child):not(:last-child):active {
+      color: $text-dark;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    &:not(&--current):hover a,
+    &:not(&--current):focus a {
+      color: $text-light;
+    }
+
+    &:active a {
+      color: $text-dark;
+    }
+
+    &:first-child {
+      padding: 4px 4px 0 0;
+    }
+
+    &:last-child {
+      padding: 4px 0 0 4px;
+      margin: 0;
+    }
+
+    &:first-child,
+    &:last-child {
+
+      &:hover .pagination__arrow,
+      &:focus .pagination__arrow {
+        width: 10px;
+        height: 14px;
+        transition: all 0.05s e('out-cubic');
+      }
+
+      &:hover .pagination__arrow--disabled,
+      &:focus .pagination__arrow--disabled {
+        width: 8px;
+        height: 12px;
+        transition: none;
+      }
+    }
+
+    &--current {
+      color: $text-dark;
+      border-radius: 50%;
+      background-color: #fff;
+
+      &:hover a,
+      &:focus a {
+        color: $text-dark;
+      }
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+
+    width: 8px;
+    height: 12px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='%23FFF' d='M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &--disabled {
+      opacity: 0.2;
+      cursor: default;
+    }
+  }
+
+  &__link {
+    color: $text-light;
+
+    &--current {
+      color: $text-dark;
+    }
+
+    &:active {
+      color: $text-dark;
+    }
+  }
+}

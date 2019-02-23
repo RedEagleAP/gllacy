@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  padding-top: 10px;
+  padding-bottom: 8px;
+
+  min-height: 70px;
+}
+
+.header__popup-wrap {
+  position: absolute;
+
+  top: 113%;
+  right: 0;
+
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -10px);
+  transition: all 0.25s e('out-cubic');
+}

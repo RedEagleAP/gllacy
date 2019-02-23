@@ -1,0 +1,27 @@
+/*
+ |--------------------------------------------------------------------------
+ |  Modules
+ |--------------------------------------------------------------------------
+ */
+
+// index.html
+@import 'module.header';
+@import 'module.site-nav';
+@import 'module.header-action';
+@import 'module.header-search';
+@import 'module.header-login';
+@import 'module.header-basket';
+@import 'module.schedule';
+@import 'module.promo-slider';
+@import 'module.promo-cards';
+@import 'module.products';
+@import 'module.features';
+@import 'module.widgets';
+@import 'module.contacts';
+@import 'module.footer';
+@import 'module.modal-feedback';
+
+// catalog.html
+@import 'module.breadcrumbs';
+@import 'module.filters';
+@import 'module.pagination';

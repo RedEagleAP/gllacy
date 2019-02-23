@@ -1,0 +1,152 @@
+.basket {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+
+  &:hover .header__popup-wrap,
+  &:focus .header__popup-wrap {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.25s ease('out-cubic');
+    z-index: 100;
+  }
+}
+
+.basket-table {
+  padding: 20px 15px;
+
+  border-collapse: separate;
+
+  width: 540px;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: $text-dark;
+  background-color: $modal-bg;
+  border-radius: 3px;
+  box-shadow: $modal-box-shadow;
+
+  cursor: default;
+  z-index: 100;
+
+  &__btn {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    width: 14px;
+    height: 14px;
+
+    font-size: 0px;
+
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &--remove {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cpath fill='%23231F20' d='M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z'/%3E%3C/svg%3E");
+
+      &:hover,
+      &:focus {
+        transform: scale(1.02);
+        transition: all 0.15s e('out-cubic');
+      }
+    }
+  }
+
+  &__item {
+
+    &--total {
+      text-align: right;
+    }
+
+    &--total td {
+      padding: 0px;
+      text-align: right;
+    }
+  }
+
+  &__col {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+
+    &--control {
+      font-size: 0px;
+      text-align: center;
+    }
+
+    &--preview {
+      font-size: 0px;
+      text-align: center;
+    }
+
+    &--preview img {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &--label {
+      padding-top: 10px;
+      width: 220px;
+      vertical-align: top;
+    }
+
+    &--price {
+      width: 145px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $text-dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $btn-bg;
+    }
+
+    &:hover .basket-table__link-content,
+    &:focus .basket-table__link-content,
+    &:active .basket-table__link-content {
+      border-bottom: 1px solid rgba(232, 76, 55, 0.3);
+    }
+  }
+
+  &__price {
+    color: #999;
+  }
+
+  &__total {
+    padding: 15px 0;
+    margin-bottom: 15px;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 700;
+
+    border-top: 1px solid #cacac7;
+  }
+
+  &__buy {
+    padding: 10px 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

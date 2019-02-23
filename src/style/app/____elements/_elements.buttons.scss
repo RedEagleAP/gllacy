@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 12px 25px;
+
+  height: 44px;
+
+  font: inherit;
+  font-size: 18px;
+  color: #fefefe;
+
+  text-align: center;
+  text-shadow: $btn-text-shadow;
+
+  background-color: $btn-bg;
+  background-image: $btn-gradient;
+  box-shadow: $btn-box-shadow;
+
+  border: none;
+  border-radius: 25px;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    background-image: $btn-gradient--hover;
+    color: #fefefe;
+
+    box-shadow: $btn-box-shadow--hover;
+    transition: all 0.2s ease('out-cubic');
+  }
+
+  &:active {
+    background-color: $btn-active;
+    background-image: $btn-gradient--active;
+    color: #fefefe;
+
+    box-shadow: $btn-box-shadow--active;
+    transition: all 0.2s ease('out-cubic');
+  }
+}

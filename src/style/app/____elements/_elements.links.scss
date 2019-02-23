@@ -1,0 +1,13 @@
+/* -------------------------------------------------- */
+/*    Links
+/* -------------------------------------------------- */
+
+a {
+  color: co('blue');
+  text-decoration: none;
+  transition: all 0.25s ease('out-cubic');
+
+  &:hover {
+    color: darken(co('blue'), 10%);
+  }
+}

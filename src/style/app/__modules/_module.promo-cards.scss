@@ -1,0 +1,60 @@
+.promo-cards {
+  margin-bottom: 40px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 5px;
+
+    &>* {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 23.3%;
+    }
+  }
+
+  &__item {
+    position: relative;
+    flex: 0 1 auto;
+
+    padding: 23px 20px;
+
+    width: 48.86%;
+    min-height: 229px;
+
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    & h3 {
+      margin-bottom: 20px;
+      font-size: 35px;
+      line-height: 41px;
+    }
+
+    & p {
+      margin-bottom: 45px;
+      font-size: 18px;
+    }
+
+    &--raspberry {
+      background-color: #ac3030;
+      background-image: url('../img/bitmaps/raspberry-bg.jpg');
+    }
+
+    &--chocolate {
+      background-color: #6d4614;
+      background-image: url('../img/bitmaps/chocolate-bg.jpg');
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.99;
+  }
+}

@@ -1,0 +1,17 @@
+/*
+ |--------------------------------------------------------------------------
+ |  Page
+ |--------------------------------------------------------------------------
+ */
+body {
+  /* stylelint-disable */
+  .js &.no-hover > * {
+    pointer-events: none;
+  }
+
+  .js &.is-open--navigation {
+    height: 100vh;
+    overflow: hidden;
+  }
+  /* stylelint-enable */
+}

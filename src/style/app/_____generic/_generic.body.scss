@@ -1,0 +1,29 @@
+/*!
+ * My project own CSS
+ */
+
+body {
+  font-family: $ff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-light;
+
+  background-color: $body-bg__1;
+}
+
+h3 {
+  color: $text-light;
+}
+
+.visually-hidden {
+  @include vh();
+}
+
+.page-title {
+  margin-bottom: 20px;
+
+  font-size: 35px;
+  line-height: 41px;
+  color: $text-light;
+}

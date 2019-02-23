@@ -1,0 +1,22 @@
+.schedule {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  text-align: right;
+
+  &__time {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__phone {
+    padding: 2px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  &__time,
+  &__phone {
+    margin-bottom: 0;
+  }
+}

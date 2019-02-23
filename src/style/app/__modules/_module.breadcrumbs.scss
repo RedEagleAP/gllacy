@@ -1,0 +1,48 @@
+.breadcrumbs {
+  display: flex;
+
+  margin-top: 20px;
+  margin-bottom: 12px;
+  padding: 0;
+
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+
+    margin-right: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    &::after {
+      content: '\226b';
+
+      vertical-align: middle;
+
+      margin-left: 8px;
+
+      font-size: 8px;
+    }
+
+    &--current {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $text-light;
+    }
+  }
+
+  &__item a {
+    color: $text-light;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffbc9e;
+      border-bottom: 1px solid rgba(255, 189, 158, 0.3);
+    }
+  }
+}

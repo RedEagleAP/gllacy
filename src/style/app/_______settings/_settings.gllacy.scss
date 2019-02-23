@@ -1,0 +1,38 @@
+//colors:
+$body-bg__1: #849d8f;
+$body-bg__2: #8996a6;
+$body-bg__3: #9d8b84;
+
+$modal-bg: #f8f7f4;
+$btn-bg: #e84d37;
+
+$text-dark: #323232;
+$text-light: #fff;
+
+$btn-hover: rgba(255, 255, 255, 0.2);
+$btn-active: rgba(0, 0, 0, 0.07);
+
+$menu-hover: #fbded7;
+$menu-active: #f6b5a5;
+$menu-current: #d07058;
+
+$link-hover: #ffbc9e;
+
+//gradients
+$btn-gradient: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+$btn-gradient--hover: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+$btn-gradient--active: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+
+//shadows
+$btn-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+$btn-box-shadow--hover: 0 2px 2px #ac1000;
+$btn-box-shadow--active: inset 0 2px 2px #942718;
+
+$btn-text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+$price-text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+
+$modal-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+$nav-box-shadow: inset 0 2px 1px #696969;
+
+//fonts
+$ff: 'Roboto', Arial, Helvetica, sans-serif;
