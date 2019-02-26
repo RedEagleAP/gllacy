@@ -8,7 +8,7 @@
 <!-- Used for the "back to top" links within the document -->
 <div id="contents"></div>
 
-# Оглавление
+# Содержание
 
 - [Вступление](#вступление)
 - [Ссылки](#ссылки)
