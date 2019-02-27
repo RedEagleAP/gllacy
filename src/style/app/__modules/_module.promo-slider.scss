@@ -4,11 +4,11 @@
   padding-bottom: 40px;
 
   & input[type=radio] {
-    display: none;
+    @include vh();
   }
 
   &__toggle {
-    display: none;
+    @include vh();
   }
 
   &__slides {

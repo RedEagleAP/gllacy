@@ -16,12 +16,9 @@
     background: none;
   }
 
-  & input[type=radio] {
-    display: none;
-  }
-
+  & input[type=radio],
   & input[type=checkbox] {
-    display: none;
+    @include vh();
   }
 
   &__item {
@@ -125,7 +122,6 @@
 
     &:hover+.filter-form__sort-icon {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5'%3E%3Cpath fill='%23000' d='M4.5 5L0 0h9z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
     }
   }
 
@@ -140,8 +136,6 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-
-  &__price-label {}
 
   &__price-range {
     display: flex;
@@ -275,12 +269,13 @@
       opacity: 0.4;
     }
 
-    &:hover input[type="radio"]:not(:disabled)+.filter-form__radio-icon {
+    &:hover input[type="radio"]:not(:disabled)+.filter-form__radio-icon,
+    &:focus input[type="radio"]:not(:disabled)+.filter-form__radio-icon {
       border: 2px solid #fff;
       transition: all 0.1s e('out-cubic');
     }
 
-    & input[type="checkbox"]:disabled {
+    & input[type="radio"]:disabled {
       cursor: default;
     }
   }
@@ -366,7 +361,7 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
 
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -11px);
       }
     }
 
@@ -374,7 +369,8 @@
       opacity: 0.4;
     }
 
-    &:hover input[type="checkbox"]:not(:disabled)+.filter-form__checkbox-icon {
+    &:hover input[type="checkbox"]:not(:disabled)+.filter-form__checkbox-icon,
+    &:focus input[type="checkbox"]:not(:disabled)+.filter-form__checkbox-icon {
       border: 1px solid #fff;
       transition: all 0.1s e('out-cubic');
     }
