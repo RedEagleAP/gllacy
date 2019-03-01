@@ -6,6 +6,7 @@
 build/
 # doc/
 /.tmp
+stats.json
 
 # Map-Files
 *.js.map
@@ -91,6 +92,7 @@ typings/
 ######################
 # Visual Studio Code
 ######################
+/.vscode
 .vscode/*
 .v8flags.*
 !.vscode/settings.json

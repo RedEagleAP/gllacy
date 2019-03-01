@@ -5,8 +5,8 @@
   ],
   "version": "4.29.3",
   "hash": "ca25dce2e57ff49abea4",
-  "time": 11708,
-  "builtAt": 1551301145659,
+  "time": 16452,
+  "builtAt": 1551460560626,
   "publicPath": "./",
   "outputPath": "F:\\101\\Repo\\gllacy\\dist\\",
   "assetsByChunkName": {
@@ -2648,9 +2648,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.copy-within.js",
-          "issuerId": "./node_modules/core-js/modules/es6.array.copy-within.js",
-          "issuerName": "./node_modules/core-js/modules/es6.array.copy-within.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.fill.js",
+          "issuerId": "./node_modules/core-js/modules/es6.array.fill.js",
+          "issuerName": "./node_modules/core-js/modules/es6.array.fill.js",
           "issuerPath": [
             {
               "id": null,
@@ -2658,9 +2658,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.array.copy-within.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.copy-within.js",
-              "name": "./node_modules/core-js/modules/es6.array.copy-within.js"
+              "id": "./node_modules/core-js/modules/es6.array.fill.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.fill.js",
+              "name": "./node_modules/core-js/modules/es6.array.fill.js"
             }
           ],
           "failed": false,
@@ -3403,9 +3403,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-          "issuerId": "./node_modules/core-js/modules/es6.string.includes.js",
-          "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+          "issuerId": "./node_modules/core-js/modules/es6.string.ends-with.js",
+          "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
           "issuerPath": [
             {
               "id": null,
@@ -3413,9 +3413,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.string.includes.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-              "name": "./node_modules/core-js/modules/es6.string.includes.js"
+              "id": "./node_modules/core-js/modules/es6.string.ends-with.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+              "name": "./node_modules/core-js/modules/es6.string.ends-with.js"
             }
           ],
           "failed": false,
@@ -3832,9 +3832,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
-          "issuerId": "./node_modules/core-js/modules/es6.regexp.constructor.js",
-          "issuerName": "./node_modules/core-js/modules/es6.regexp.constructor.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.to-string.js",
+          "issuerId": "./node_modules/core-js/modules/es6.regexp.to-string.js",
+          "issuerName": "./node_modules/core-js/modules/es6.regexp.to-string.js",
           "issuerPath": [
             {
               "id": null,
@@ -3842,9 +3842,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.regexp.constructor.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
-              "name": "./node_modules/core-js/modules/es6.regexp.constructor.js"
+              "id": "./node_modules/core-js/modules/es6.regexp.to-string.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.to-string.js",
+              "name": "./node_modules/core-js/modules/es6.regexp.to-string.js"
             }
           ],
           "failed": false,
@@ -4754,9 +4754,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.reflect.get.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-              "name": "./node_modules/core-js/modules/es6.reflect.get.js"
+              "id": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+              "name": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js"
             },
             {
               "id": "./node_modules/core-js/modules/_object-gopd.js",
@@ -5158,9 +5158,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-integer.js",
-          "issuerId": "./node_modules/core-js/modules/es6.number.is-integer.js",
-          "issuerName": "./node_modules/core-js/modules/es6.number.is-integer.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-safe-integer.js",
+          "issuerId": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+          "issuerName": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
           "issuerPath": [
             {
               "id": null,
@@ -5168,9 +5168,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.number.is-integer.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-integer.js",
-              "name": "./node_modules/core-js/modules/es6.number.is-integer.js"
+              "id": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-safe-integer.js",
+              "name": "./node_modules/core-js/modules/es6.number.is-safe-integer.js"
             }
           ],
           "failed": false,
@@ -5867,9 +5867,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_collection-strong.js",
-          "issuerId": "./node_modules/core-js/modules/_collection-strong.js",
-          "issuerName": "./node_modules/core-js/modules/_collection-strong.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.iterator.js",
+          "issuerId": "./node_modules/core-js/modules/es6.array.iterator.js",
+          "issuerName": "./node_modules/core-js/modules/es6.array.iterator.js",
           "issuerPath": [
             {
               "id": null,
@@ -5877,14 +5877,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.map.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.map.js",
-              "name": "./node_modules/core-js/modules/es6.map.js"
-            },
-            {
-              "id": "./node_modules/core-js/modules/_collection-strong.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_collection-strong.js",
-              "name": "./node_modules/core-js/modules/_collection-strong.js"
+              "id": "./node_modules/core-js/modules/es6.array.iterator.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.iterator.js",
+              "name": "./node_modules/core-js/modules/es6.array.iterator.js"
             }
           ],
           "failed": false,
@@ -7158,9 +7153,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-          "issuerId": "./node_modules/core-js/modules/es6.reflect.get.js",
-          "issuerName": "./node_modules/core-js/modules/es6.reflect.get.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+          "issuerId": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+          "issuerName": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
           "issuerPath": [
             {
               "id": null,
@@ -7168,9 +7163,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.reflect.get.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-              "name": "./node_modules/core-js/modules/es6.reflect.get.js"
+              "id": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+              "name": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js"
             }
           ],
           "failed": false,
@@ -7684,9 +7679,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-gopn.js",
-          "issuerId": "./node_modules/core-js/modules/_object-gopn.js",
-          "issuerName": "./node_modules/core-js/modules/_object-gopn.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-keys.js",
+          "issuerId": "./node_modules/core-js/modules/_object-keys.js",
+          "issuerName": "./node_modules/core-js/modules/_object-keys.js",
           "issuerPath": [
             {
               "id": null,
@@ -7699,9 +7694,9 @@
               "name": "./node_modules/core-js/modules/es6.symbol.js"
             },
             {
-              "id": "./node_modules/core-js/modules/_object-gopn.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-gopn.js",
-              "name": "./node_modules/core-js/modules/_object-gopn.js"
+              "id": "./node_modules/core-js/modules/_object-keys.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-keys.js",
+              "name": "./node_modules/core-js/modules/_object-keys.js"
             }
           ],
           "failed": false,
@@ -9623,9 +9618,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-          "issuerId": "./node_modules/core-js/modules/es6.string.includes.js",
-          "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+          "issuerId": "./node_modules/core-js/modules/es6.string.ends-with.js",
+          "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
           "issuerPath": [
             {
               "id": null,
@@ -9633,9 +9628,9 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.string.includes.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-              "name": "./node_modules/core-js/modules/es6.string.includes.js"
+              "id": "./node_modules/core-js/modules/es6.string.ends-with.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+              "name": "./node_modules/core-js/modules/es6.string.ends-with.js"
             }
           ],
           "failed": false,
@@ -10050,9 +10045,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_parse-int.js",
-          "issuerId": "./node_modules/core-js/modules/_parse-int.js",
-          "issuerName": "./node_modules/core-js/modules/_parse-int.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_string-trim.js",
+          "issuerId": "./node_modules/core-js/modules/_string-trim.js",
+          "issuerName": "./node_modules/core-js/modules/_string-trim.js",
           "issuerPath": [
             {
               "id": null,
@@ -10060,14 +10055,14 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.number.parse-int.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.parse-int.js",
-              "name": "./node_modules/core-js/modules/es6.number.parse-int.js"
+              "id": "./node_modules/core-js/modules/es6.number.constructor.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+              "name": "./node_modules/core-js/modules/es6.number.constructor.js"
             },
             {
-              "id": "./node_modules/core-js/modules/_parse-int.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_parse-int.js",
-              "name": "./node_modules/core-js/modules/_parse-int.js"
+              "id": "./node_modules/core-js/modules/_string-trim.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_string-trim.js",
+              "name": "./node_modules/core-js/modules/_string-trim.js"
             }
           ],
           "failed": false,
@@ -10295,9 +10290,9 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-buffer.js",
-          "issuerId": "./node_modules/core-js/modules/_typed-buffer.js",
-          "issuerName": "./node_modules/core-js/modules/_typed-buffer.js",
+          "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-array.js",
+          "issuerId": "./node_modules/core-js/modules/_typed-array.js",
+          "issuerName": "./node_modules/core-js/modules/_typed-array.js",
           "issuerPath": [
             {
               "id": null,
@@ -10305,14 +10300,14 @@
               "name": "./src/js/main.js"
             },
             {
-              "id": "./node_modules/core-js/modules/es6.typed.array-buffer.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-              "name": "./node_modules/core-js/modules/es6.typed.array-buffer.js"
+              "id": "./node_modules/core-js/modules/es6.typed.float64-array.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.typed.float64-array.js",
+              "name": "./node_modules/core-js/modules/es6.typed.float64-array.js"
             },
             {
-              "id": "./node_modules/core-js/modules/_typed-buffer.js",
-              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-buffer.js",
-              "name": "./node_modules/core-js/modules/_typed-buffer.js"
+              "id": "./node_modules/core-js/modules/_typed-array.js",
+              "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-array.js",
+              "name": "./node_modules/core-js/modules/_typed-array.js"
             }
           ],
           "failed": false,
@@ -21372,9 +21367,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.copy-within.js",
-      "issuerId": "./node_modules/core-js/modules/es6.array.copy-within.js",
-      "issuerName": "./node_modules/core-js/modules/es6.array.copy-within.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.fill.js",
+      "issuerId": "./node_modules/core-js/modules/es6.array.fill.js",
+      "issuerName": "./node_modules/core-js/modules/es6.array.fill.js",
       "issuerPath": [
         {
           "id": null,
@@ -21382,9 +21377,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.array.copy-within.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.copy-within.js",
-          "name": "./node_modules/core-js/modules/es6.array.copy-within.js"
+          "id": "./node_modules/core-js/modules/es6.array.fill.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.fill.js",
+          "name": "./node_modules/core-js/modules/es6.array.fill.js"
         }
       ],
       "failed": false,
@@ -22127,9 +22122,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-      "issuerId": "./node_modules/core-js/modules/es6.string.includes.js",
-      "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+      "issuerId": "./node_modules/core-js/modules/es6.string.ends-with.js",
+      "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
       "issuerPath": [
         {
           "id": null,
@@ -22137,9 +22132,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.string.includes.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-          "name": "./node_modules/core-js/modules/es6.string.includes.js"
+          "id": "./node_modules/core-js/modules/es6.string.ends-with.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+          "name": "./node_modules/core-js/modules/es6.string.ends-with.js"
         }
       ],
       "failed": false,
@@ -22556,9 +22551,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
-      "issuerId": "./node_modules/core-js/modules/es6.regexp.constructor.js",
-      "issuerName": "./node_modules/core-js/modules/es6.regexp.constructor.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.to-string.js",
+      "issuerId": "./node_modules/core-js/modules/es6.regexp.to-string.js",
+      "issuerName": "./node_modules/core-js/modules/es6.regexp.to-string.js",
       "issuerPath": [
         {
           "id": null,
@@ -22566,9 +22561,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.regexp.constructor.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.constructor.js",
-          "name": "./node_modules/core-js/modules/es6.regexp.constructor.js"
+          "id": "./node_modules/core-js/modules/es6.regexp.to-string.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.regexp.to-string.js",
+          "name": "./node_modules/core-js/modules/es6.regexp.to-string.js"
         }
       ],
       "failed": false,
@@ -23478,9 +23473,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.reflect.get.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-          "name": "./node_modules/core-js/modules/es6.reflect.get.js"
+          "id": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+          "name": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js"
         },
         {
           "id": "./node_modules/core-js/modules/_object-gopd.js",
@@ -23882,9 +23877,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-integer.js",
-      "issuerId": "./node_modules/core-js/modules/es6.number.is-integer.js",
-      "issuerName": "./node_modules/core-js/modules/es6.number.is-integer.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-safe-integer.js",
+      "issuerId": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+      "issuerName": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
       "issuerPath": [
         {
           "id": null,
@@ -23892,9 +23887,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.number.is-integer.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-integer.js",
-          "name": "./node_modules/core-js/modules/es6.number.is-integer.js"
+          "id": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.is-safe-integer.js",
+          "name": "./node_modules/core-js/modules/es6.number.is-safe-integer.js"
         }
       ],
       "failed": false,
@@ -24591,9 +24586,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_collection-strong.js",
-      "issuerId": "./node_modules/core-js/modules/_collection-strong.js",
-      "issuerName": "./node_modules/core-js/modules/_collection-strong.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.iterator.js",
+      "issuerId": "./node_modules/core-js/modules/es6.array.iterator.js",
+      "issuerName": "./node_modules/core-js/modules/es6.array.iterator.js",
       "issuerPath": [
         {
           "id": null,
@@ -24601,14 +24596,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.map.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.map.js",
-          "name": "./node_modules/core-js/modules/es6.map.js"
-        },
-        {
-          "id": "./node_modules/core-js/modules/_collection-strong.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_collection-strong.js",
-          "name": "./node_modules/core-js/modules/_collection-strong.js"
+          "id": "./node_modules/core-js/modules/es6.array.iterator.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.array.iterator.js",
+          "name": "./node_modules/core-js/modules/es6.array.iterator.js"
         }
       ],
       "failed": false,
@@ -25882,9 +25872,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-      "issuerId": "./node_modules/core-js/modules/es6.reflect.get.js",
-      "issuerName": "./node_modules/core-js/modules/es6.reflect.get.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+      "issuerId": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+      "issuerName": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
       "issuerPath": [
         {
           "id": null,
@@ -25892,9 +25882,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.reflect.get.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get.js",
-          "name": "./node_modules/core-js/modules/es6.reflect.get.js"
+          "id": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.reflect.get-own-property-descriptor.js",
+          "name": "./node_modules/core-js/modules/es6.reflect.get-own-property-descriptor.js"
         }
       ],
       "failed": false,
@@ -26408,9 +26398,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-gopn.js",
-      "issuerId": "./node_modules/core-js/modules/_object-gopn.js",
-      "issuerName": "./node_modules/core-js/modules/_object-gopn.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-keys.js",
+      "issuerId": "./node_modules/core-js/modules/_object-keys.js",
+      "issuerName": "./node_modules/core-js/modules/_object-keys.js",
       "issuerPath": [
         {
           "id": null,
@@ -26423,9 +26413,9 @@
           "name": "./node_modules/core-js/modules/es6.symbol.js"
         },
         {
-          "id": "./node_modules/core-js/modules/_object-gopn.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-gopn.js",
-          "name": "./node_modules/core-js/modules/_object-gopn.js"
+          "id": "./node_modules/core-js/modules/_object-keys.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_object-keys.js",
+          "name": "./node_modules/core-js/modules/_object-keys.js"
         }
       ],
       "failed": false,
@@ -28347,9 +28337,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-      "issuerId": "./node_modules/core-js/modules/es6.string.includes.js",
-      "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+      "issuerId": "./node_modules/core-js/modules/es6.string.ends-with.js",
+      "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
       "issuerPath": [
         {
           "id": null,
@@ -28357,9 +28347,9 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.string.includes.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.includes.js",
-          "name": "./node_modules/core-js/modules/es6.string.includes.js"
+          "id": "./node_modules/core-js/modules/es6.string.ends-with.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.string.ends-with.js",
+          "name": "./node_modules/core-js/modules/es6.string.ends-with.js"
         }
       ],
       "failed": false,
@@ -28774,9 +28764,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_parse-int.js",
-      "issuerId": "./node_modules/core-js/modules/_parse-int.js",
-      "issuerName": "./node_modules/core-js/modules/_parse-int.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_string-trim.js",
+      "issuerId": "./node_modules/core-js/modules/_string-trim.js",
+      "issuerName": "./node_modules/core-js/modules/_string-trim.js",
       "issuerPath": [
         {
           "id": null,
@@ -28784,14 +28774,14 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.number.parse-int.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.parse-int.js",
-          "name": "./node_modules/core-js/modules/es6.number.parse-int.js"
+          "id": "./node_modules/core-js/modules/es6.number.constructor.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.number.constructor.js",
+          "name": "./node_modules/core-js/modules/es6.number.constructor.js"
         },
         {
-          "id": "./node_modules/core-js/modules/_parse-int.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_parse-int.js",
-          "name": "./node_modules/core-js/modules/_parse-int.js"
+          "id": "./node_modules/core-js/modules/_string-trim.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_string-trim.js",
+          "name": "./node_modules/core-js/modules/_string-trim.js"
         }
       ],
       "failed": false,
@@ -29019,9 +29009,9 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-buffer.js",
-      "issuerId": "./node_modules/core-js/modules/_typed-buffer.js",
-      "issuerName": "./node_modules/core-js/modules/_typed-buffer.js",
+      "issuer": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-array.js",
+      "issuerId": "./node_modules/core-js/modules/_typed-array.js",
+      "issuerName": "./node_modules/core-js/modules/_typed-array.js",
       "issuerPath": [
         {
           "id": null,
@@ -29029,14 +29019,14 @@
           "name": "./src/js/main.js"
         },
         {
-          "id": "./node_modules/core-js/modules/es6.typed.array-buffer.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.typed.array-buffer.js",
-          "name": "./node_modules/core-js/modules/es6.typed.array-buffer.js"
+          "id": "./node_modules/core-js/modules/es6.typed.float64-array.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\es6.typed.float64-array.js",
+          "name": "./node_modules/core-js/modules/es6.typed.float64-array.js"
         },
         {
-          "id": "./node_modules/core-js/modules/_typed-buffer.js",
-          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-buffer.js",
-          "name": "./node_modules/core-js/modules/_typed-buffer.js"
+          "id": "./node_modules/core-js/modules/_typed-array.js",
+          "identifier": "F:\\101\\Repo\\gllacy\\node_modules\\core-js\\modules\\_typed-array.js",
+          "name": "./node_modules/core-js/modules/_typed-array.js"
         }
       ],
       "failed": false,
