@@ -1,6 +1,5 @@
 .footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -11,22 +10,22 @@
 
 .footer-liberal {
   display: flex;
+  flex-wrap: wrap;
   flex: 0 1 auto;
+
+  min-width: 180px;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  & li {
-    display: inline-flex;
-  }
-
   &__icon {
-    display: inline-block;
+    display: block;
     flex: 0 1 auto;
 
     margin-right: 12px;
+    margin-bottom: 10px;
 
     width: 32px;
     height: 32px;
@@ -71,17 +70,20 @@
 
 .footer-menu {
   display: flex;
+  flex-wrap: wrap;
   flex: 0 1 auto;
   justify-content: space-between;
   position: relative;
 
-  margin-left: 110px;
+  margin-left: 250px;
 
   width: 305px;
 
   &__col {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 10px;
   }
 
   & b {
@@ -102,8 +104,6 @@
   }
 
   &__link {
-    display: inline-flex;
-
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
@@ -130,12 +130,20 @@
 .footer-copyright {
   flex: 0 1 auto;
 
+  margin-left: auto;
+
+  max-width: 252px;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
 
+  text-align: center;
+
   & img {
-    margin-left: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   & a {

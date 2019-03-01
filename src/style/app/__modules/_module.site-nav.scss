@@ -1,13 +1,13 @@
 .site-nav {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
+
+  max-width: 400px;
 
   margin-left: 20px;
 
   &__item {
-    display: inline-block;
-    vertical-align: top;
     position: relative;
     flex: 0 1 auto;
 

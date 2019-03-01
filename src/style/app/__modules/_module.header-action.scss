@@ -1,11 +1,19 @@
 .header__actions-wrap {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   flex: 1 1 auto;
+
+  max-width: 300px;
+
+  margin-left: auto;
 }
 
 .header__action {
   position: relative;
+  flex: 0 1 auto;
+
+  margin-bottom: 10px;
 
   &:hover .header__popup-wrap {
     visibility: visible;
@@ -13,8 +21,6 @@
 }
 
 .actions-btn {
-  display: inline-block;
-
   margin-left: 9px;
   padding-top: 10px;
   padding-left: 45px;
