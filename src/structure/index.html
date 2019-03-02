@@ -22,9 +22,9 @@
 
 <body>
   <div class="overlay"></div>
-  <input class="promo-slider__toggle" id="btn-1" type="radio" name="promo-slider__toggle" checked>
-  <input class="promo-slider__toggle" id="btn-2" type="radio" name="promo-slider__toggle">
-  <input class="promo-slider__toggle" id="btn-3" type="radio" name="promo-slider__toggle">
+  <input class="visually-hidden" id="btn-1" type="radio" name="promo-slider__toggle" checked>
+  <input class="visually-hidden" id="btn-2" type="radio" name="promo-slider__toggle">
+  <input class="visually-hidden" id="btn-3" type="radio" name="promo-slider__toggle">
 
   <div class="page-wrapper">
     <div class="content-wrapper">
@@ -362,7 +362,6 @@
     <section class="modal feedback">
       <div class="modal__feedback-wrap">
         <h2 class="feedback__title">Мы обязательно вам ответим!</h2>
-        <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
         <form class="feedback__form" id="feedback-form" action="/echo" method="post">
           <label class="visually-hidden" for="feedback-name">Имя</label>
           <input id="feedback-name" type="text" name="feedback_name" placeholder="Как вас зовут?" required>
@@ -372,6 +371,7 @@
           <textarea class="feedback__textarea" id="feedback-textarea" name="feedback_textarea" placeholder="Напишите что-нибудь..."
             required></textarea>
           <button class="btn feedback__btn" type="submit">Отправить</button>
+          <button class="modal__close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </div>
     </section>
