@@ -2,7 +2,7 @@
  *Карта
  */
 
-const contactsMap = {
+const appContactsMap = {
   map() {
     window.onload = () => {
       let mapOptions = {
@@ -25,4 +25,4 @@ const contactsMap = {
   },
 }
 
-export default contactsMap
+export default appContactsMap

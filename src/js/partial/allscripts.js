@@ -6,10 +6,10 @@ import bodyClass from '../scripts/bodyclass'
 import disableHover from '../scripts/disableHover'
 import resizeClass from '../scripts/resizeClass'
 import appFeedbackForm from '../scripts/appFeedbackForm'
-import contactsMap from '../scripts/contactsMap'
+import appContactsMap from '../scripts/appContactsMap'
 
 // Modules Array
-const scriptsArray = [bodyClass, disableHover, resizeClass, appFeedbackForm, contactsMap]
+const scriptsArray = [bodyClass, disableHover, resizeClass, appFeedbackForm, appContactsMap]
 
 const scripts = {
   // Scripts

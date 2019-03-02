@@ -1,21 +1,37 @@
 /*
  * Форма обратной ствязи
  */
+/* eslint-disable */
 let contactsBtn = document.querySelector('.contacts__btn')
 let overlay = document.querySelector('.overlay')
-let modalFeedback = document.querySelector('.feedback')
-let modalFeedbackCloseBtn = modalFeedback.querySelector('.modal__close')
+let modal = document.querySelector('.modal')
+let modalCloseBtn = modal.querySelector('.modal__close')
+
 let feedbackForm = document.querySelector('#feedback-form')
 let feedbackNameField = feedbackForm.querySelector('#feedback-name')
 let feedbackEmailField = feedbackForm.querySelector('#feedback-email')
-let feedbackNameSaved = localStorage.getItem('feedback-name')
+let feedbackTextarea = feedbackForm.querySelector('#feedback-textarea')
+
+let isStorageSupport = true
+let feedbackNameSaved = ''
+
+try {
+  feedbackNameSaved = localStorage.getItem('feedback-name')
+} catch (err) {
+  isStorageSupport = false
+}
 
 const appFeedbackForm = {
   ContactsBtn() {
     contactsBtn.addEventListener('click', (evt) => {
       evt.preventDefault()
-      modalFeedback.classList.add('feedback--show-fadeout')
-      overlay.classList.add('overlay--show')
+      if (modal.classList.contains('modal--show-remove-item')) {
+        modal.classList.remove('modal--show-remove-item')
+      } else {
+        modal.classList.add('modal--show-new-item')
+        overlay.classList.add('overlay--show')
+      }
+
       if (feedbackNameSaved) {
         feedbackNameField.value = feedbackNameSaved
         feedbackEmailField.focus()
@@ -25,26 +41,37 @@ const appFeedbackForm = {
     })
   },
 
-  ModalCloseBtn() {
-    modalFeedbackCloseBtn.addEventListener('click', (evt) => {
+  ModalClose() {
+    modalCloseBtn.addEventListener('click', (evt) => {
       evt.preventDefault()
-      modalFeedback.classList.remove('feedback--show-fadeout')
+      modal.classList.remove('modal--show-new-item')
       overlay.classList.remove('overlay--show')
+      modal.classList.remove('modal--error')
+      modal.classList.add('modal--show-remove-item')
     })
   },
 
-  FeedbackForm() {
+  SubmitForm() {
     feedbackForm.addEventListener('submit', (evt) => {
-      localStorage.setItem('feedback-name', feedbackNameField.value)
+      if (!feedbackNameField.value || !feedbackEmailField.value || !feedbackTextarea.value) {
+        evt.preventDefault()
+          modal.classList.remove('modal--error')
+          modal.classList.add('modal--error')
+      } else if (isStorageSupport) {
+        localStorage.setItem('feedback-name', feedbackNameField.value)
+      }
     })
   },
 
-  Keydown() {
+  Esc() {
     window.addEventListener('keydown', (evt) => {
       if (evt.keyCode === 27) {
-        if (modalFeedback.classList.contains('feedback--show-fadeout')) {
-          modalFeedback.classList.remove('feedback--show-fadeout')
+        if (modal.classList.contains('modal--show-new-item')) {
+          evt.preventDefault()
+          modal.classList.remove('modal--show-new-item')
           overlay.classList.remove('overlay--show')
+          modal.classList.remove('modal--error')
+          modal.classList.add('modal--show-remove-item')
         }
       }
     })
@@ -52,9 +79,9 @@ const appFeedbackForm = {
 
   init() {
     this.ContactsBtn()
-    this.ModalCloseBtn()
-    this.FeedbackForm()
-    this.Keydown()
+    this.ModalClose()
+    this.SubmitForm()
+    this.Esc()
   },
 }
 
