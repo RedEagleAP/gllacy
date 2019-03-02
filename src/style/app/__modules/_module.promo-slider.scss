@@ -3,14 +3,6 @@
   padding-top: 310px;
   padding-bottom: 40px;
 
-  & input[type=radio] {
-    @include vh();
-  }
-
-  &__toggle {
-    @include vh();
-  }
-
   &__slides {
     max-height: 215px;
   }

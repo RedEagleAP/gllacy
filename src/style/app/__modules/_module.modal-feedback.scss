@@ -1,4 +1,46 @@
 .modal {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+
+  // transform: translate(-50%, -50%);
+  margin-left: -239px;
+  margin-top: -221.5px;
+
+  z-index: 500;
+
+  visibility: hidden;
+  backface-visibility: hidden;
+
+  &--show {
+
+    &-new-item {
+      visibility: visible;
+      backface-visibility: visible;
+      transform-origin: top left;
+      animation: FlipIn 1000ms both 250ms,
+                 openSpace 500ms ease forwards;
+    }
+
+    &-remove-item {
+      visibility: visible;
+      backface-visibility: visible;
+      transform-origin: top left;
+      animation: FlipOut 1000ms both 250ms,
+                 closeSpace 1000ms ease forwards;
+    }
+
+    &~.overlay--show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &--error {
+    animation: shake 0.6s;
+  }
+
   &__feedback-wrap {
     position: relative;
 
@@ -14,8 +56,6 @@
   &__close {
     display: inline-block;
     vertical-align: top;
-
-    font-size: 0;
 
     background-color: transparent;
     background-repeat: no-repeat;
@@ -38,37 +78,16 @@
       z-index: 10;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17'%3E%3Cpath fill='%23231F20' d='M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z'/%3E%3C/svg%3E");
     }
+
+    &:hover::before,
+    &:focus::before {
+      transform: rotate(360deg);
+      transition: all 0.45s ease('out-cubic');
+    }
   }
 }
 
 .feedback {
-  display: none;
-  position: fixed;
-
-  left: 50%;
-  top: 50%;
-
-  transform: translate(-50%, -50%);
-  z-index: 500;
-
-  &--show {
-    display: block;
-  }
-
-  &--show-zoomin {
-    display: block;
-    animation: zoomin 0.5s;
-  }
-
-  &--show-flipin {
-    display: block;
-    animation: flipin 0.5s;
-  }
-
-  &--show-fadeout {
-    display: block;
-    animation: fadeout 0.5s;
-  }
 
   &__title {
     margin-bottom: 0;
@@ -146,38 +165,5 @@
   &__btn {
     margin-left: auto;
     min-width: 139px;
-  }
-}
-
-@keyframes zoomin {
-  from {
-    opacity: 0;
-    transform: scale3d(.3, .3, .3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes flipin {
-  from {
-    opacity: 0;
-    transform: translate(-100%, -100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }

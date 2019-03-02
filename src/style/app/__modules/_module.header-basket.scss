@@ -45,8 +45,6 @@
     width: 14px;
     height: 14px;
 
-    font-size: 0px;
-
     box-shadow: none;
     border: none;
     cursor: pointer;
@@ -58,12 +56,12 @@
 
     &--remove {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cpath fill='%23231F20' d='M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z'/%3E%3C/svg%3E");
+    }
 
-      &:hover,
-      &:focus {
-        transform: scale(1.02);
-        transition: all 0.15s e('out-cubic');
-      }
+    &:hover,
+    &:focus{
+      transform: rotate(360deg);
+      transition: all 0.45s ease('out-cubic');
     }
   }
 
@@ -86,7 +84,6 @@
     vertical-align: middle;
 
     &--control {
-      font-size: 0px;
       text-align: center;
     }
 

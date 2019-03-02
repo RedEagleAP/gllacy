@@ -1,0 +1,79 @@
+/*
+ |--------------------------------------------------------------------------
+ |  Animations
+ |--------------------------------------------------------------------------
+ */
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0.25;
+    transform: translate3d(-50%, -5px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, 5px, 0);
+  }
+}
+
+@keyframes openSpace {
+  to {
+    max-height: 443px;
+  }
+}
+
+@keyframes closeSpace {
+  to {
+    max-height: 0px;
+  }
+
+  from {
+    max-height: 443px;
+  }
+}
+
+@keyframes FlipIn {
+  0% {
+    transform: perspective(478px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: perspective(478px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes FlipOut {
+  0% {
+    transform: perspective(578px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(578px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
