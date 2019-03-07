@@ -46,7 +46,7 @@ const appFeedbackForm = {
       evt.preventDefault()
       modal.classList.remove('modal--show-new-item')
       overlay.classList.remove('overlay--show')
-      modal.classList.remove('modal--error')
+      // modal.classList.remove('modal--error')
       modal.classList.add('modal--show-remove-item')
     })
   },
@@ -55,8 +55,8 @@ const appFeedbackForm = {
     feedbackForm.addEventListener('submit', (evt) => {
       if (!feedbackNameField.value || !feedbackEmailField.value || !feedbackTextarea.value) {
         evt.preventDefault()
-          modal.classList.remove('modal--error')
-          modal.classList.add('modal--error')
+          // modal.classList.remove('modal--error')
+          // modal.classList.add('modal--error')
       } else if (isStorageSupport) {
         localStorage.setItem('feedback-name', feedbackNameField.value)
       }
@@ -70,7 +70,7 @@ const appFeedbackForm = {
           evt.preventDefault()
           modal.classList.remove('modal--show-new-item')
           overlay.classList.remove('overlay--show')
-          modal.classList.remove('modal--error')
+          // modal.classList.remove('modal--error')
           modal.classList.add('modal--show-remove-item')
         }
       }
