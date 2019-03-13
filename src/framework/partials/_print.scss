@@ -14,10 +14,10 @@
     text-shadow: none !important;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+  // a,
+  // a:visited {
+  //   text-decoration: underline;
+  // }
 
   a[href]:after {
     content: " (" attr(href) ")";

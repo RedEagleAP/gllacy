@@ -6,7 +6,7 @@
 // Set on false
 //
 // @type {bool | number }                   - Set to false if you do not want responsive fontsizes
-$kittn-active-responsive-fonts: 85;
+$kittn-active-responsive-fonts: false;
 
 // Map with all breakpoints and related behavior
 //
@@ -35,17 +35,17 @@ $kittn-breakpoint-map: (
   'm': (
     size: 768px,
     step: true,
-    fontsize: 90
+    fontsize: false
   ),
   'ml': (
     size: 960px,
     step: true,
-    fontsize: 95
+    fontsize: false
   ),
   'l': (
     size: 1180px,
     step: true,
-    fontsize: 100
+    fontsize: false
   )
 );
 
@@ -137,10 +137,10 @@ $kittn-iconfont: (
 $kittn-typo: (
   unit: rem,
   mqunit: em,
-  base-scale: 85,
+  base-scale: 100,
   base-size: 16,
   base-size-px: 16px,
-  line-height: 1.5
+  line-height: 1.3
 );
 
 // Default Margin for Typographic Elements (set on '0' when not needed)
@@ -400,7 +400,7 @@ $kittn-color-map: (
 $kittn-color-route: (
   body: c('body'),
   text: c('main'),
-  headline: c('gray'),
+  headline: c('black'),
   blockquote: c('main'),
   highlight-bg: lighten(c('primary'), 25),
   highlight-text: darken(c('primary'), 10),
@@ -437,7 +437,7 @@ $kittn-tables: (
   background: transparent,
   background-zebra: tint(c(primary), 20),
   background-hover: lighten(c(primary), 20),
-  border-color: c('gray'),
+  border-color: c('black'),
   margin: 20px,
   padding: 8px,
   trigger: 400px,

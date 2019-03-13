@@ -128,13 +128,13 @@
     "contentimage": "images/"
   },
   "css": {
-    "spacer": "20px",
+    "spacer": "26px",
     "baseFontSize": "16px"
   },
   "files": {
-    "jsCopy": ["app.js"],
+    "jsCopy": [""],
     "jsCombine": {
-      "filename": "app.js"
+      "filename": ""
     },
     "fonts": [
       "src/fonts/**"
