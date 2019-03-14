@@ -24,8 +24,8 @@ $kittn-breakpoint-map: (
   ),
   's': (
     size: 480px,
-    step: false,
-    fontsize: false
+    step: true,
+    fontsize: 90
   ),
   'sm': (
     size: 560px,
@@ -35,17 +35,17 @@ $kittn-breakpoint-map: (
   'm': (
     size: 768px,
     step: true,
-    fontsize: false
+    fontsize: 95
   ),
   'ml': (
-    size: 960px,
+    size: 900px,
     step: true,
     fontsize: false
   ),
   'l': (
-    size: 1180px,
+    size: 1200px,
     step: true,
-    fontsize: false
+    fontsize: 100
   )
 );
 

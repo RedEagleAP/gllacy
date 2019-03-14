@@ -5,14 +5,14 @@
   text-align: right;
 
   &__time {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: rem(14px);
+    line-height: em(16px, 14);
   }
 
   &__phone {
-    padding: 2px 0;
-    font-size: 22px;
-    line-height: 24px;
+    padding: em(2px, 22) 0;
+    font-size: rem(22px);
+    line-height: em(24px, 22);
   }
 
   &__time,

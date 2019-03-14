@@ -1,8 +1,8 @@
 .breadcrumbs {
   display: flex;
 
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin-top: rem(20px);
+  margin-bottom: rem(12px);
   padding: 0;
 
   list-style: none;
@@ -10,26 +10,26 @@
   &__item {
     display: inline-block;
 
-    margin-right: 8px;
+    margin-right: rem(8px);
 
-    font-size: 14px;
+    font-size: em(14px);
     font-weight: 400;
-    line-height: 16px;
+    line-height: em(16px, 14);
 
     &::after {
       content: '\226b';
 
       vertical-align: middle;
 
-      margin-left: 8px;
+      margin-left: rem(8px);
 
-      font-size: 8px;
+      font-size: em(8px, 14);
     }
 
     &--current {
-      font-size: 14px;
+      font-size: em(14px);
       font-weight: 400;
-      line-height: 16px;
+      line-height: em(16px, 14);
       color: $text-light;
     }
   }

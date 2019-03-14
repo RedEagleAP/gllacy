@@ -44,7 +44,7 @@
   &__feedback-wrap {
     position: relative;
 
-    padding: 20px 26px 27px 24px;
+    padding: rem(20px) rem(26px) rem(27px) rem(24px);
 
     width: 478px;
     min-height: 443px;
@@ -92,9 +92,9 @@
   &__title {
     margin-bottom: 0;
 
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
-    line-height: 28px;
+    line-height: em(28px, 24);
     color: $text-dark;
   }
 
@@ -104,14 +104,14 @@
 
     & input {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
       width: 267px;
     }
   }
 
   &__textarea {
-    margin-bottom: 25px;
-    padding: 13px 15px;
+    margin-bottom: rem(25px);
+    padding: em(13px, 16) rem(15px);
 
     width: 100%;
     min-height: 155px;
@@ -120,8 +120,8 @@
     border-radius: 5px;
 
     font-family: $ff;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: rem(16px);
+    line-height: em(24px, 16);
     font-weight: 700;
     color: $text-dark;
 
@@ -157,7 +157,7 @@
     &::placeholder {
       color: #999;
       font-family: $ff;
-      font-size: 14px;
+      font-size: rem(14px);
       font-weight: 400;
     }
   }

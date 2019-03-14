@@ -22,7 +22,7 @@
   &__form {
     display: block;
 
-    padding: 20px 17px 22px 19px;
+    padding: rem(20px) rem(17px) rem(22px) rem(19px);
 
     width: 277px;
     min-height: 214px;
@@ -36,25 +36,25 @@
   &__link-wrap {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: rem(20px);
   }
 
   &__btn {
-    width: 100px;
-    padding: 12px 24px;
+    padding-left: rem(24px);
+    padding-right: rem(24px);
   }
 
   &__links {
     display: inline-block;
     vertical-align: top;
-    margin-left: 15px;
+    margin-left: rem(15px);
   }
 
   &__link {
     display: block;
 
-    font-size: 13px;
-    line-height: 21px;
+    font-size: rem(13px);
+    line-height: em(21px, 13);
     font-weight: 400;
     color: $text-dark;
 

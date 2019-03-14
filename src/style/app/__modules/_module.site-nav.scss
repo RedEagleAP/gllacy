@@ -5,13 +5,11 @@
 
   max-width: 400px;
 
-  margin-left: 20px;
+  margin-left: rem(20px);
 
   &__item {
     position: relative;
     flex: 0 1 auto;
-
-    padding: 8px 14px;
 
     &::after {
       content: "";
@@ -52,8 +50,10 @@
   }
 
   &__link {
+    display: block;
+    padding: rem(8px) rem(14px);
     color: $text-light;
-    line-height: 18px;
+    line-height: em(18px);
     text-align: center;
 
     &:hover,
@@ -72,14 +72,6 @@
     &:hover .site-nav__link-content,
     &:active .site-nav__link-content {
       border-bottom: none;
-    }
-
-    &:focus {
-      color: #ffbc9e;
-    }
-
-    &:focus .site-nav__link-content {
-      border-bottom: 1px solid rgba(255, 189, 158, 0.3);
     }
   }
 
@@ -119,27 +111,27 @@
 
   &__popup-item {
     &:last-child .site-nav__popup-link {
-      padding-bottom: 12px;
+      padding-bottom: rem(12px);
     }
   }
 
   &__popup-link {
     display: block;
 
-    padding: 7px 18px;
-    padding-bottom: 9px;
+    padding: em(7px, 14) rem(18px);
+    padding-bottom: em(9px, 14);
 
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
-    line-height: 16px;
+    line-height: em(16px, 14);
     color: $text-dark;
 
     &--title {
       position: relative;
 
-      margin: 0px 6px;
-      padding: 9px 12px;
-      padding-bottom: 12px;
+      margin: 0 rem(6px);
+      padding: em(9px, 14) rem(12px);
+      padding-bottom: em(12px, 14);
 
       font-weight: 700;
 

@@ -2,10 +2,10 @@
   display: inline-block;
   vertical-align: top;
 
-  padding: 12px 25px;
+  padding: em(12px, 18) em(25px, 18);
 
   font: inherit;
-  font-size: 18px;
+  font-size: rem(18px);
   color: #fefefe;
   white-space: nowrap;
 
@@ -17,7 +17,7 @@
   box-shadow: $btn-box-shadow;
 
   border: none;
-  border-radius: 25px;
+  border-radius: em(25px, 16);
   outline: 0;
 
   &:hover,

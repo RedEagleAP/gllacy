@@ -4,14 +4,14 @@
   flex-wrap: wrap;
   align-items: center;
 
-  margin-bottom: 38px;
+  margin-bottom: rem(38px);
 }
 
 .news {
   flex-grow: 0;
   flex-shrink: 1;
   width: 48.8%;
-  padding: 25px 20px;
+  padding: rem(25px) rem(20px);
 
   min-height: 220px;
 
@@ -19,22 +19,25 @@
   background-image: url('../img/bitmaps/strawberry-bg.jpg');
   background-repeat: no-repeat;
   background-position: 30% 50%;
+  @include break(1100px, max) {
+    background-position: 5% 50%;
+  }
   background-size: cover;
   border-radius: 10px;
   overflow: hidden;
 
   &__title {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 500;
-    line-height: 22px;
+    line-height: em(22px, 16);
     color: $text-dark;
   }
 
   &__link {
     display: inline-block;
     max-width: 60%;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: rem(24px);
+    line-height: em(30px, 24);
     color: $text-dark;
 
     &:hover,
@@ -62,7 +65,7 @@
   width: 48.8%;
   min-height: 220px;
 
-  padding: 30px 20px 35px;
+  padding: rem(30px) rem(20px) rem(35px);
 
   background-image: repeating-linear-gradient(-45deg, #fe9e90 5px, #fe9e90 10px, #f8f7f4 10px, #f8f7f4 15px, #92cdff 15px, #92cdff 20px, #f8f7f4 20px, #f8f7f4 25px);
   border-radius: 10px;
@@ -77,7 +80,7 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-    margin: 5px 7px;
+    margin: rem(5px) rem(7px);
     border-radius: inherit;
     background-color: $modal-bg;
   }
@@ -100,7 +103,7 @@
   & input {
     flex: 1 1 auto;
 
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     min-width: 210px;
 
@@ -111,6 +114,7 @@
 
   &__btn {
     flex: 0 1 auto;
-    padding: 12px 19px;
+    padding-left: rem(19px);
+    padding-right: rem(19px);
   }
 }

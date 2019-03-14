@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 38px;
+    margin-bottom: rem(38px);
   }
 
   &__item {
@@ -24,8 +24,8 @@
     transition: all 0.25s e('out-cubic');
 
     &:hover {
-      margin-bottom: -30px;
-      padding-bottom: 68px;
+      margin-bottom: rem(-30px);
+      padding-bottom: rem(68px);
 
       z-index: 10;
 
@@ -106,11 +106,10 @@
 
     z-index: 60;
 
-    font-size: 45px;
-    line-height: 45px;
+    font-size: rem(45px);
+    line-height: em(45px, 45);
     @include break(1040px, max) {
-      font-size: 35px;
-      line-height: 35px;
+      font-size: rem(35px);
     }
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
@@ -138,23 +137,23 @@
 
     & small {
       padding-left: 24px;
-      font-size: 30px;
+      font-size: rem(30px);
       @include break(1040px, max) {
-        font-size: 25px;
+        font-size: rem(25px);
       }
     }
   }
 
   &__title {
     margin: 0;
-    margin-top: 15px;
+    margin-top: rem(15px);
 
     width: 100%;
     max-width: 267px;
 
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 500;
-    line-height: 22px;
+    line-height: em(22px, 16);
     z-index: 60;
   }
 
@@ -181,7 +180,7 @@
 
   &__btn {
     @include break(1040px, max) {
-      font-size: 17px;
+      font-size: rem(17px);
     }
   }
 
@@ -199,10 +198,10 @@
   }
 
   &--top {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
     &:hover {
-      margin-bottom: -48px;
+      margin-bottom: rem(-48px);
     }
   }
 }
@@ -229,7 +228,7 @@
 
   .products__preview {
     @include break(896px, max) {
-      padding: 0 10px;
+      padding: 0 rem(10px);
     }
 
     @include break(598px, max) {
@@ -248,13 +247,12 @@
 
   .products__price {
     @include break(896px, max) {
-      font-size: 45px;
-      line-height: 45px;
+      font-size: rem(45px);
     }
 
     & small {
       @include break(896px, max) {
-        font-size: 30px;
+        font-size: rem(30px);
       }
     }
 
@@ -271,7 +269,7 @@
 
   .products__title {
     @include break(896px, max) {
-      padding: 0 10px;
+      padding: 0 rem(10px);
     }
 
     @include break(598px, max) {
@@ -281,7 +279,7 @@
 
   .products__btn {
     @include break(896px, max) {
-      font-size: 18px;
+      font-size: rem(18px);
     }
   }
 }

@@ -6,7 +6,7 @@ body {
   font-family: $ff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 22px;
+  line-height: em(22px);
   color: $text-light;
 
   background-color: $body-bg__1;
@@ -21,9 +21,9 @@ h3 {
 }
 
 .page-title {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
-  font-size: 35px;
-  line-height: 41px;
+  font-size: em(35px);
+  line-height: em(41px, 35);
   color: $text-light;
 }

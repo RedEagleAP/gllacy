@@ -19,19 +19,19 @@
 }
 
 .basket-table {
-  padding: 20px 15px;
+  padding: rem(20px) rem(15px);
 
   border-collapse: separate;
 
   width: 540px;
 
-  font-size: 13px;
-  line-height: 16px;
+  font-size: rem(13px);
+  line-height: em(16px, 13);
   font-weight: 400;
 
   color: $text-dark;
   background-color: $modal-bg;
-  border-radius: 3px;
+  border-radius: em(3px, 13);
   box-shadow: $modal-box-shadow;
 
   cursor: default;
@@ -72,15 +72,15 @@
     }
 
     &--total td {
-      padding: 0px;
+      padding: 0;
       text-align: right;
     }
   }
 
   &__col {
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 15px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: rem(15px);
     vertical-align: middle;
 
     &--control {
@@ -88,7 +88,6 @@
     }
 
     &--preview {
-      font-size: 0px;
       text-align: center;
     }
 
@@ -98,7 +97,7 @@
     }
 
     &--label {
-      padding-top: 10px;
+      padding-top: rem(10px);
       width: 220px;
       vertical-align: top;
     }
@@ -130,11 +129,11 @@
   }
 
   &__total {
-    padding: 15px 0;
-    margin-bottom: 15px;
+    padding: em(15px, 15) 0;
+    margin-bottom: rem(15px);
 
-    font-size: 15px;
-    line-height: 18px;
+    font-size: rem(15px);
+    line-height: em(18px, 15);
     font-style: normal;
     font-weight: 700;
 
@@ -142,8 +141,8 @@
   }
 
   &__buy {
-    padding: 10px 15px;
+    padding: rem(10px) rem(15px);
     font-weight: 700;
-    line-height: 24px;
+    line-height: rem(24px);
   }
 }

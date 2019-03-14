@@ -1,6 +1,6 @@
 .features {
-  margin-bottom: 38px;
-  padding: 15px;
+  margin-bottom: rem(38px);
+  padding: rem(15px);
 
   min-height: 306px;
 
@@ -10,13 +10,13 @@
   border-radius: 10px;
 
   &__title {
-    margin-bottom: 26px;
-    padding-left: 11px;
-    padding-top: 15px;
+    margin-bottom: rem(26px);
+    padding-left: rem(11px);
+    padding-top: em(15px, 24);
 
-    font-size: 24px;
+    font-size: em(24px);
     font-weight: 500;
-    line-height: 30px;
+    line-height: em(30px, 24);
     color: $text-dark;
   }
 
@@ -24,26 +24,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
   }
 
   &__card {
     position: relative;
     flex: 0 1 auto;
 
-    padding-left: 59px;
+    padding-left: rem(59px);
 
-    width: 50%;
+    width: 49%;
 
     font-weight: 400;
     color: $text-dark;
 
     &:nth-child(even) {
-      padding-right: 19px;
-    }
-
-    &:nth-child(4) {
-      padding-bottom: 20px;
+      padding-right: rem(19px);
     }
 
     &::before {
@@ -56,7 +51,7 @@
       height: 49px;
 
       top: -15px;
-      left: 5px;
+      left: 7px;
 
       background-color: transparent;
       background-repeat: no-repeat;

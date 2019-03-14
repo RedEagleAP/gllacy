@@ -1,7 +1,7 @@
 .promo-slider {
   position: relative;
-  padding-top: 310px;
-  padding-bottom: 40px;
+  padding-top: rem(310px);
+  padding-bottom: rem(40px);
 
   &__slides {
     max-height: 215px;
@@ -17,12 +17,12 @@
   &__title {
     display: block;
 
-    margin: 0px auto 30px;
+    margin: 0px auto rem(30px);
 
     width: 675px;
 
-    font-size: 60px;
-    line-height: 60.35px;
+    font-size: rem(60px);
+    line-height: em(60.35px, 60);
     font-weight: 700;
 
     text-align: center;
@@ -30,12 +30,10 @@
 
   &__controls {
     position: absolute;
-    padding: 0px 25px;
+    padding: 0 rem(25px);
 
     bottom: 45px;
-    left: 0px;
-
-    font-size: 0px;
+    left: 0;
 
     z-index: 120;
 
@@ -43,7 +41,7 @@
       display: inline-block;
       vertical-align: top;
 
-      margin-right: 8px;
+      margin-right: rem(8px);
 
       width: 21px;
       height: 21px;
@@ -67,12 +65,11 @@
   }
 
   &__btn {
-    padding: 17px 43px;
-    height: 64px;
-    font-size: 32px;
-    line-height: 32px;
+    padding: em(17px, 32) em(43px, 32);
+    font-size: rem(32px);
+    line-height: em(32px, 32);
     font-weight: 700;
-    border-radius: 31px;
+    border-radius: em(31px, 16);
   }
 }
 

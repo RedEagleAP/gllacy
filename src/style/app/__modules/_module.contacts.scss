@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   max-width: 1200px;
   min-height: 430px;
@@ -37,40 +37,39 @@
     position: absolute;
 
     top: 50%;
-    right: 2%;
+    right: 2.5%;
 
     width: 302px;
     height: 305px;
 
-    padding: 31px 25px;
+    padding: rem(31px) rem(25px);
 
     background-color: #fff;
     border-radius: 10px;
     color: $text-dark;
 
     z-index: 10;
-    transform: translate(-2%, -50%);
+    transform: translate(-2.5%, -50%);
     overflow: hidden;
 
     & p {
-      font-size: 14px;
+      font-size: em(14px);
       font-weight: 400;
-      line-height: 20px;
+      line-height: em(20px, 14);
     }
 
     & strong {
-      font-size: 18px;
+      font-size: em(18px);
       font-weight: 700;
-      line-height: 24px;
+      line-height: em(24px, 18);
 
       &:last-child {
-        line-height: 22px;
+        line-height: em(22px, 18);
       }
     }
   }
 
   &__btn {
-    padding: 12px 25px;
     width: 100%;
   }
 }

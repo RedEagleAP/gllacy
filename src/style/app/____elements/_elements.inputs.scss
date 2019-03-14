@@ -2,12 +2,13 @@ input {
   display: inline-block;
   vertical-align: top;
 
-  padding: 9px 15px;
   height: 44px;
 
+  padding: em(9px, 16) em(15px, 16);
+
   font-family: $ff;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: rem(16px);
+  line-height: em(24px, 16);
   font-weight: 700;
   color: $text-dark;
 
@@ -45,7 +46,7 @@ input {
   &::placeholder {
     color: #999;
     font-family: $ff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
   }
 }
@@ -59,6 +60,6 @@ input[id="input-email"] {
 }
 
 input[id="input-password"] {
-  margin-top: 20px;
+  margin-top: rem(20px);
   min-width: 241px;
 }
