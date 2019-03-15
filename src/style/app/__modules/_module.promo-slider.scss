@@ -3,6 +3,10 @@
   padding-top: rem(310px);
   padding-bottom: rem(40px);
 
+  @include break('sm', max) {
+    padding-top: rem(86px);
+  }
+
   &__slides {
     max-height: 215px;
   }
@@ -12,6 +16,10 @@
     position: relative;
     text-align: center;
     transition: all 0.25s e('out-cubic');
+
+    @include break('sm', max) {
+      margin-bottom: rem(30px);
+    }
   }
 
   &__title {
@@ -26,6 +34,15 @@
     font-weight: 700;
 
     text-align: center;
+
+    @include break(712px, max) {
+      width: 90%;
+      font-size: 2.75rem;
+    }
+
+    @include break('sm', max) {
+      font-size: 1.75rem;
+    }
   }
 
   &__controls {
@@ -36,6 +53,10 @@
     left: 0;
 
     z-index: 120;
+
+    @include break('sm', max) {
+      bottom: 25px;
+    }
 
     & label {
       display: inline-block;
@@ -70,6 +91,14 @@
     line-height: em(32px, 32);
     font-weight: 700;
     border-radius: em(31px, 16);
+
+    @include break(712px, max) {
+      font-size: 1.75rem;
+    }
+
+    @include break('sm', max) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -88,20 +117,25 @@
 #btn-1:checked~.page-wrapper {
   background-color: $body-bg__1;
   background-image: url("../img/bitmaps/icecreams-first.png");
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 #btn-2:checked~.page-wrapper {
   background-color: $body-bg__2;
   background-image: url("../img/bitmaps/icecreams-second.png");
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 #btn-3:checked~.page-wrapper {
   background-color: $body-bg__3;
   background-image: url("../img/bitmaps/icecreams-third.png");
+}
+
+#btn-1:checked~.page-wrapper,
+#btn-2:checked~.page-wrapper,
+#btn-3:checked~.page-wrapper {
   background-repeat: no-repeat;
   background-position: center top;
+
+  @include break(650px, max) {
+    background-size: 160%;
+  }
 }
