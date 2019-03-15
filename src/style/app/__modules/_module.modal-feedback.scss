@@ -4,7 +4,6 @@
   left: 50%;
   top: 50%;
 
-  // transform: translate(-50%, -50%);
   margin-left: -239px;
   margin-top: -221.5px;
 
@@ -12,6 +11,10 @@
 
   visibility: hidden;
   backface-visibility: hidden;
+
+  @include break(682px, max) {
+    margin-left: -35vw;
+  }
 
   &--show {
 
@@ -51,6 +54,10 @@
 
     background-color: $modal-bg;
     border-radius: 10px;
+
+    @include break(682px, max) {
+      width: 70vw;
+    }
   }
 
   &__close {
@@ -90,7 +97,7 @@
 .feedback {
 
   &__title {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 
     font-size: rem(24px);
     font-weight: 500;
@@ -106,6 +113,10 @@
       display: block;
       margin-bottom: rem(20px);
       width: 267px;
+
+      @include break('s', max) {
+        width: 100%;
+      }
     }
   }
 
@@ -165,5 +176,9 @@
   &__btn {
     margin-left: auto;
     min-width: 139px;
+
+    @include break('s', max) {
+      width: 100%;
+    }
   }
 }
