@@ -1,6 +1,10 @@
 .footer {
   display: flex;
   align-items: center;
+  @include break('sm', max) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer-inner {
@@ -19,6 +23,10 @@
   padding: 0;
 
   list-style: none;
+
+  @include break('sm', max) {
+    margin-bottom: rem(20px);
+  }
 
   &__icon {
     display: block;
@@ -76,19 +84,30 @@
   position: relative;
 
   margin-left: rem(250px);
+  width: 305px;
+
   @include break(1130px, max) {
     margin-left: auto;
   }
+
   @include break(875px, max) {
     margin-left: rem(40px);
   }
 
-  @include break(768px, max) {
+  @include break('m', max) {
     flex-direction: column;
     margin-left: rem(80px);
   }
 
-  width: 305px;
+  @include break(620px, max) {
+    margin-left: 3rem;
+  }
+
+  @include break('sm', max) {
+    padding-left: rem(10px);
+    margin-left: 8rem;
+    margin-bottom: rem(20px);
+  }
 
   &__col {
     display: flex;
@@ -150,6 +169,10 @@
   line-height: em(18px, 12);
 
   text-align: center;
+
+  @include break('sm', max) {
+    margin-left: 0;
+  }
 
   & img {
     display: block;
