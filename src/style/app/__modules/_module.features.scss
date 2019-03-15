@@ -9,6 +9,10 @@
   background-position: 15px 50%;
   border-radius: 10px;
 
+  @include break('sm', max) {
+    margin-bottom: rem(20px);
+  }
+
   &__title {
     margin-bottom: rem(26px);
     padding-left: rem(11px);
@@ -18,12 +22,21 @@
     font-weight: 500;
     line-height: em(30px, 24);
     color: $text-dark;
+    @include break('m', max) {
+      margin-bottom: rem(58px);
+    }
+    @include break('s', max) {
+      font-size: em(20px);
+    }
   }
 
   &__wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include break('m', max) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -39,6 +52,24 @@
 
     &:nth-child(even) {
       padding-right: rem(19px);
+      @include break('m', max) {
+        padding-right: rem(11px);
+      }
+    }
+
+    @include break('m', max) {
+      width: 100%;
+      padding-left: rem(11px);
+      padding-right: rem(11px);
+      margin-bottom: rem(58px);
+
+      &:last-child {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    @include break('s', max) {
+      font-size: .95rem;
     }
 
     &::before {
@@ -51,7 +82,12 @@
       height: 49px;
 
       top: -15px;
-      left: 7px;
+      left: 4px;
+      @include break('m', max) {
+        top: -53px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
       background-color: transparent;
       background-repeat: no-repeat;
