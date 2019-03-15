@@ -7,12 +7,6 @@
     flex-wrap: wrap;
 
     margin-top: rem(5px);
-
-    &>* {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 23.3%;
-    }
   }
 
   &__item {
@@ -22,6 +16,9 @@
     padding: rem(23px) rem(20px);
 
     width: 48.86%;
+    @include break(780px, max) {
+      width: 100%;
+    }
     min-height: 229px;
 
     border-radius: 10px;
@@ -32,15 +29,25 @@
     & h3 {
       margin-bottom: rem(20px);
       font-size: rem(35px);
+      @include break(382px, max) {
+        font-size: 1.8rem;
+      }
       line-height: em(41px, 35);
     }
 
     & p {
       margin-bottom: rem(45px);
       font-size: rem(18px);
+      @include break(382px, max) {
+        margin-bottom: rem(55px);
+        font-size: rem(16px);
+      }
     }
 
     &--raspberry {
+      @include break(780px, max) {
+        margin-bottom: rem(20px);
+      }
       background-color: #ac3030;
       background-image: url('../img/bitmaps/raspberry-bg.jpg');
     }
