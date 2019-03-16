@@ -3,8 +3,29 @@
   padding-top: rem(310px);
   padding-bottom: rem(40px);
 
-  @include break('sm', max) {
-    padding-top: rem(86px);
+  @include break(710px, max) {
+    padding-top: rem(406px);
+  }
+  @include break(600px, max) {
+    padding-top: rem(374px);
+  }
+  @include break(500px, max) {
+    padding-top: rem(342px);
+  }
+  @include break(450px, max) {
+    padding-top: rem(294px);
+  }
+  @include break(400px, max) {
+    padding-top: rem(264px);
+  }
+  @include break(370px, max) {
+    padding-top: rem(248px);
+  }
+  @include break(345px, max) {
+    padding-top: rem(232px);
+  }
+  @include break(325px, max) {
+    padding-top: rem(220px);
   }
 
   &__slides {
@@ -40,8 +61,12 @@
       font-size: 2.75rem;
     }
 
-    @include break('sm', max) {
+    @include break(568px, max) {
       font-size: 1.75rem;
+    }
+
+    @include break(380px, max) {
+      font-size: 1.5rem;
     }
   }
 
@@ -99,6 +124,10 @@
     @include break('sm', max) {
       font-size: 1.5rem;
     }
+
+    @include break(380px, max) {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -137,5 +166,24 @@
 
   @include break(650px, max) {
     background-size: 160%;
+    background-position: center 10px;
+  }
+
+  @include break('s', max) {
+    background-position: center 25px;
+  }
+}
+
+@include break(710px, max) {
+  #btn-1:checked~.page-wrapper .content-wrapper .header {
+    background-color: $body-bg__1;
+  }
+
+  #btn-2:checked~.page-wrapper .content-wrapper .header {
+    background-color: $body-bg__2;
+  }
+
+  #btn-3:checked~.page-wrapper .content-wrapper .header {
+    background-color: $body-bg__3;
   }
 }
