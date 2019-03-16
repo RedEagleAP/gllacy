@@ -27,8 +27,30 @@
   <input class="visually-hidden" id="btn-3" type="radio" name="promo-slider__toggle">
 
   <div class="page-wrapper">
+    <nav class="menu-wrap">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html"><span class="main-menu__link-content">Каталог</span></a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#"><span class="main-menu__link-content">Доставка&nbsp;и&nbsp;оплата</span></a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#"><span class="main-menu__link-content">О&nbsp;компании</span></a>
+        </li>
+      </ul>
+    </nav>
+    <button class="close-button" id="close-button">Close Menu</button>
+    <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+        <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+      </svg>
+    </div>
+
     <div class="content-wrapper">
       <header class="header">
+        <button class="menu-button" id="open-button">Open Menu</button>
+
         <a class="header__logo">
           <img src="images/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
@@ -376,6 +398,9 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5ETwSX_pAzmXaCs2Q9LQvuMMqxH_7Dxc" async defer></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/snap.svg-min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/burger-menu.js"></script>
 </body>
 
 </html>
