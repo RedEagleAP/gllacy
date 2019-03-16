@@ -83,6 +83,18 @@
       height: 17px;
 
       z-index: 10;
+
+      @include break(588px, max) {
+        top: 8px;
+        right: 12px;
+      }
+
+      @include break(360px, max) {
+        width: 15px;
+        height: 14px;
+        right: 10px;
+      }
+
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17'%3E%3Cpath fill='%23231F20' d='M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z'/%3E%3C/svg%3E");
     }
 
@@ -103,6 +115,10 @@
     font-weight: 500;
     line-height: em(28px, 24);
     color: $text-dark;
+
+    @include break(360px, max) {
+      font-size: 1.35rem;
+    }
   }
 
   &__form {
@@ -116,6 +132,14 @@
 
       @include break('s', max) {
         width: 100%;
+      }
+
+      @include break(360px, max) {
+        font-size: rem(12px);
+
+        &::placeholder {
+          font-size: rem(12px);
+        }
       }
     }
   }
@@ -170,6 +194,14 @@
       font-family: $ff;
       font-size: rem(14px);
       font-weight: 400;
+    }
+
+    @include break(360px, max) {
+      font-size: rem(12px);
+
+      &::placeholder {
+        font-size: rem(12px);
+      }
     }
   }
 
