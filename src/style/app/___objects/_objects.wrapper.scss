@@ -13,9 +13,11 @@
   background-color: #849d8f;
   background-repeat: no-repeat;
   background-position: center top;
-  overflow: hidden;
 
   transition: background-image 0.5s ease('out-back'), background-color 0.5s ease('out-back');
+
+  overflow: hidden;
+  transition: transform 0.4s;
 
   &::before,
   &::after {

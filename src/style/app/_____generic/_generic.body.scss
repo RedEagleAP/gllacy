@@ -23,7 +23,11 @@ h3 {
 .page-title {
   margin-bottom: rem(20px);
 
-  font-size: em(35px);
+  font-size: rem(35px);
   line-height: em(41px, 35);
   color: $text-light;
+
+  @include break('s', max) {
+    font-size: 1.8rem;
+  }
 }

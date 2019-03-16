@@ -7,6 +7,10 @@
 
   list-style: none;
 
+  @include break(710px, max) {
+    margin-top: rem(84px);
+  }
+
   &__item {
     display: inline-block;
 

@@ -6,6 +6,10 @@
     flex-wrap: wrap;
 
     margin-bottom: rem(38px);
+
+    @include break(658px, max) {
+      justify-content: space-around;
+    }
   }
 
   &__item {

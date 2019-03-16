@@ -166,3 +166,9 @@
     }
   }
 }
+
+nav {
+  @include break(710px, max) {
+    display: none;
+  }
+}
