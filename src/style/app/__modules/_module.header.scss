@@ -8,6 +8,25 @@
   padding-bottom: rem(8px);
 
   min-height: 70px;
+
+  @include break(710px, max) {
+    justify-content: space-between;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-height: 50px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.1rem;
+
+    background-color: #849d8f;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .52);
+    z-index: 198;
+  }
 }
 
 .header__popup-wrap {
@@ -21,4 +40,13 @@
   visibility: hidden;
   transform: translate(0, -10px);
   transition: all 0.25s e('out-cubic');
+}
+
+.header__logo {
+  & img {
+    @include break(710px, max) {
+      width: 134px;
+      height: 44px;
+    }
+  }
 }

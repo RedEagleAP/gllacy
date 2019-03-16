@@ -7,6 +7,11 @@
   max-width: 300px;
 
   margin-left: auto;
+
+  @include break(710px, max) {
+    max-width: 120px;
+    margin-left: 0;
+  }
 }
 
 .header__action {
@@ -49,6 +54,7 @@
   }
 
   &--search {
+    margin-left: 0;
     padding: 0;
 
     width: 33px;
@@ -72,6 +78,15 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='19' fill='%23fff' viewBox='0 0 21 19'%3E%3Cpath d='M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z'/%3E%3Cpath d='M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E");
     background-position: 16px 6px;
 
+    @include break(854px, max) {
+      height: 33px;
+      width: 33px;
+      padding: 0;
+      font-size: 0;
+      border-radius: 50%;
+      background-position: 45% 50%;
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -85,6 +100,15 @@
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20'%3E%3Cg fill='%23fff'%3E%3Cpath d='M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z'/%3E%3Ccircle cx='6.984' cy='18' r='2'/%3E%3Ccircle cx='15.984' cy='18' r='2'/%3E%3C/g%3E%3C/svg%3E");
     background-position: 16px 6px;
+
+    @include break(854px, max) {
+      height: 33px;
+      width: 33px;
+      padding: 0;
+      font-size: 0;
+      border-radius: 50%;
+      background-position: 45% 58%;
+    }
 
     &:hover,
     &:focus,
@@ -101,5 +125,14 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20'%3E%3Cpath fill='%23E84D37' d='M5.888 4.031L6.922 13h10.45l1.176-8.969z'/%3E%3Ccircle fill='%23343434' cx='6.984' cy='18' r='2'/%3E%3Ccircle fill='%23343434' cx='15.984' cy='18' r='2'/%3E%3Cpath fill='%23343434' d='M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z'/%3E%3C/svg%3E");
     background-position: 16px 6px;
     color: $text-dark;
+
+    @include break(854px, max) {
+      height: 33px;
+      width: 33px;
+      padding: 0;
+      font-size: 0;
+      border-radius: 50%;
+      background-position: 45% 58%;
+    }
   }
 }
