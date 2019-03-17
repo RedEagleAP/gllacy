@@ -17,7 +17,6 @@
   transition: background-image 0.5s ease('out-back'), background-color 0.5s ease('out-back');
 
   overflow: hidden;
-  transition: transform 0.4s;
 
   &::before,
   &::after {

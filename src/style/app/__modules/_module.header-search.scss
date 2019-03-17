@@ -16,6 +16,10 @@
     box-shadow: $modal-box-shadow;
     border-radius: 3px;
     cursor: default;
+
+    @include break('s', max) {
+      padding: rem(15px) rem(10px);
+    }
   }
 
   &:hover .header__popup-wrap,

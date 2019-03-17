@@ -53,6 +53,11 @@ input {
 
 input[type="search"] {
   min-width: 296px;
+
+  @include break('s', max) {
+    min-width: 200px;
+    width: 200px;
+  }
 }
 
 input[id="input-email"] {

@@ -14,7 +14,7 @@
     opacity: 1;
     transform: translate(0, 0);
     transition: all 0.25s ease('out-cubic');
-    z-index: 100;
+    z-index: 200;
   }
 }
 
@@ -35,7 +35,13 @@
   box-shadow: $modal-box-shadow;
 
   cursor: default;
-  z-index: 100;
+  z-index: 200;
+
+  @include break('sm', max) {
+    padding: .8rem .5rem;
+    width: 310px;
+    font-size: .6rem;
+  }
 
   &__btn {
     display: inline-block;
@@ -85,6 +91,10 @@
 
     &--control {
       text-align: center;
+
+      @include break('sm', max) {
+        padding-right: rem(5px);
+      }
     }
 
     &--preview {
@@ -94,12 +104,22 @@
     &--preview img {
       display: inline-block;
       vertical-align: top;
+
+      @include break('sm', max) {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     &--label {
       padding-top: rem(10px);
       width: 220px;
       vertical-align: top;
+
+      @include break('sm', max) {
+        padding-left: rem(5px);
+        width: 180px;
+      }
     }
 
     &--price {
@@ -138,11 +158,20 @@
     font-weight: 700;
 
     border-top: 1px solid #cacac7;
+
+    @include break('sm', max) {
+      margin-bottom: 0.6rem;
+      font-size: 0.8rem;
+    }
   }
 
   &__buy {
-    padding: rem(10px) rem(15px);
+    padding: em(10px, 18) rem(15px);
     font-weight: 700;
-    line-height: rem(24px);
+    line-height: em(24px, 18);
+
+    @include break('sm', max) {
+      font-size: 0.9rem;
+    }
   }
 }
