@@ -186,4 +186,16 @@
   #btn-3:checked~.page-wrapper .content-wrapper .header {
     background-color: $body-bg__3;
   }
+
+  #btn-1:checked~.page-wrapper .morph-shape--show {
+    fill: $body-bg__1;
+  }
+
+  #btn-2:checked~.page-wrapper .morph-shape--show {
+    fill: $body-bg__2;
+  }
+
+  #btn-3:checked~.page-wrapper .morph-shape--show {
+    fill: $body-bg__3;
+  }
 }
