@@ -20,10 +20,32 @@
 </head>
 
 <body class="inner-page">
-
+  <div class="overlay"></div>
   <div class="page-wrapper">
+    <nav class="menu-wrap">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html"><span class="main-menu__link-content">Каталог</span></a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#"><span class="main-menu__link-content">Доставка&nbsp;и&nbsp;оплата</span></a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#"><span class="main-menu__link-content">О&nbsp;компании</span></a>
+        </li>
+      </ul>
+    </nav>
+    <button class="close-button" id="close-button">Close Menu</button>
+    <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+        <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+      </svg>
+    </div>
+
     <div class="content-wrapper">
       <header class="header">
+        <button class="menu-button" id="open-button">Open Menu</button>
+
         <a class="header__logo" href="index.html">
           <img src="images/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
         </a>
@@ -39,16 +61,16 @@
                   </li>
                   <li class="site-nav__popup-item"><a class="site-nav__popup-link site-nav__popup-link--current" href="catalog.html">Сливочное</a></li>
                   <li class="site-nav__popup-item"><a class="site-nav__popup-link" href="#">Щербеты</a></li>
-                  <li class="site-nav__popup-item"><a class="site-nav__popup-link" href="#">Фруктовый лёд</a></li>
+                  <li class="site-nav__popup-item"><a class="site-nav__popup-link" href="#">Фруктовый&nbsp;лёд</a></li>
                   <li class="site-nav__popup-item"><a class="site-nav__popup-link" href="#">Мелорин</a></li>
                 </ul>
               </div>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#"><span class="site-nav__link-content">Доставка и оплата</span></a>
+              <a class="site-nav__link" href="#"><span class="site-nav__link-content">Доставка&nbsp;и&nbsp;оплата</span></a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#"><span class="site-nav__link-content">О компании</span></a>
+              <a class="site-nav__link" href="#"><span class="site-nav__link-content">О&nbsp;компании</span></a>
             </li>
           </ul>
         </nav>
@@ -77,10 +99,10 @@
                     <button class="btn login__btn" type="submit">Войти</button>
                     <div class="login__links">
                       <a class="login__link" href="#">
-                        <span class="login__link-content">Забыли пароль?</span>
+                        <span class="login__link-content">Забыли&nbsp;пароль?</span>
                       </a>
                       <a class="login__link" href="#">
-                        <span class="login__link-content">Новая регистрация</span>
+                        <span class="login__link-content">Новая&nbsp;регистрация</span>
                       </a>
                     </div>
                   </div>
@@ -90,10 +112,10 @@
           </div>
           <div class="header__action basket">
             <div class="actions-btn actions-btn--basket-full">
-              2 товара
+              2&nbsp;товара
               <div class="header__popup-wrap">
                 <table class="basket-table">
-                  <caption class="visually-hidden">Товары в корзине:</caption>
+                  <caption class="visually-hidden">Товары в&nbsp;корзине:</caption>
                   <tbody>
                     <tr class="basket-table__item">
                       <td class="basket-table__col  basket-table__col--control">
@@ -104,15 +126,15 @@
                       </td>
                       <td class="basket-table__col  basket-table__col--label">
                         <a class="basket-table__link" href="#">
-                          <span class="basket-table__link-content">Пломбир с апельсиновым джемом</span>
+                          <span class="basket-table__link-content">Пломбир с&nbsp;апельсиновым джемом</span>
                         </a>
                       </td>
                       <td class="basket-table__col  basket-table__col--price">
-                        <span class="basket-table__amount">1,5 кг</span> x
-                        <span class="basket-table__price">200 руб.</span>
+                        <span class="basket-table__amount">1,5&nbsp;кг</span> x
+                        <span class="basket-table__price">200&nbsp;руб.</span>
                       </td>
                       <td class="basket-table__col  basket-table__col--sum">
-                        300 руб.
+                        300&nbsp;руб.
                       </td>
                     </tr>
                     <tr class="basket-table__item">
@@ -124,22 +146,22 @@
                       </td>
                       <td class="basket-table__col  basket-table__col--label">
                         <a class="basket-table__link" href="#">
-                          <span class="basket-table__link-content">Клубничный пломбир с присыпкой из белого шоколада</span>
+                          <span class="basket-table__link-content">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</span>
                         </a>
                       </td>
                       <td class="basket-table__col  basket-table__col--price">
-                        <span class="basket-table__amount">1,5 кг</span> x
-                        <span class="basket-table__price">300 руб.</span>
+                        <span class="basket-table__amount">1,5&nbsp;кг</span> x
+                        <span class="basket-table__price">300&nbsp;руб.</span>
                       </td>
                       <td class="basket-table__col  basket-table__col--sum">
-                        450 руб.
+                        450&nbsp;руб.
                       </td>
                     </tr>
                   </tbody>
                   <tfoot>
                     <tr class="basket-table__item  basket-table__item--total">
                       <td colspan="5">
-                        <div class="basket-table__total">Итого: 750 руб.</div>
+                        <div class="basket-table__total">Итого: 750&nbsp;руб.</div>
                         <a class="btn basket-table__buy" href="#">Оформить заказ</a>
                       </td>
                     </tr>
@@ -151,8 +173,8 @@
         </div>
 
         <div class="schedule">
-          <p class="schedule__time">С 10 до 20, ежедневно</p>
-          <p class="schedule__phone">8 812 450-25-25</p>
+          <p class="schedule__time">С&nbsp;10&nbsp;до&nbsp;20, ежедневно</p>
+          <p class="schedule__phone">8&nbsp;812&nbsp;450-25-25</p>
         </div>
       </header>
       <!-- /.header -->
@@ -164,7 +186,7 @@
           <li class="breadcrumbs__item--current">Сливочное</li>
         </ul>
 
-        <h1 class="page-title">Сливочное мороженое</h1>
+        <h1 class="page-title">Сливочное&nbsp;мороженое</h1>
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -172,10 +194,10 @@
             <fieldset class="filter-form__item">
               <legend class="filter-form__title">Сортировка:</legend>
               <select class="filter-form__sort" name="sort">
-                <option value="popular">по популярности</option>
+                <option value="popular">по&nbsp;популярности</option>
                 <option value="inexpensive">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
-                <option value="fatcontent">по жирности</option>
+                <option value="fatcontent">по&nbsp;жирности</option>
               </select>
               <span class="filter-form__sort-icon"></span>
             </fieldset>
@@ -183,8 +205,8 @@
               <legend class="filter-form__title">
                 Цена:
                 <span class="filter-form__price-label">
-                  <output class="filters__lower-cost" name="lower-cost">100 руб.</output> –
-                  <output class="filters__upper-cost" name="upper-cost">500 руб.</output>
+                  <output class="filters__lower-cost" name="lower-cost">100&nbsp;руб.</output> –
+                  <output class="filters__upper-cost" name="upper-cost">500&nbsp;руб.</output>
                 </span>
               </legend>
               <div class="filter-form__price-range">
@@ -214,21 +236,21 @@
                   <label class="filter-form__radio-control">
                     <input type="radio" name="fatcontent" value="b10" checked disabled>
                     <span class="filter-form__radio-icon"></span>
-                    <span class="filter-form__radio-label">до 10%</span>
+                    <span class="filter-form__radio-label">до&nbsp;10%</span>
                   </label>
                 </li>
                 <li class="filter-form__fatcontent-item">
                   <label class="filter-form__radio-control">
                     <input type="radio" name="fatcontent" value="b30" disabled>
                     <span class="filter-form__radio-icon"></span>
-                    <span class="filter-form__radio-label">до 30%</span>
+                    <span class="filter-form__radio-label">до&nbsp;30%</span>
                   </label>
                 </li>
                 <li class="filter-form__fatcontent-item">
                   <label class="filter-form__radio-control">
                     <input type="radio" name="fatcontent" value="a30">
                     <span class="filter-form__radio-icon"></span>
-                    <span class="filter-form__radio-label">выше 30%</span>
+                    <span class="filter-form__radio-label">выше&nbsp;30%</span>
                   </label>
                 </li>
               </ul>
@@ -247,7 +269,7 @@
                   <label class="filter-form__checkbox-control">
                     <input type="checkbox" name="filler-sugar" checked disabled>
                     <span class="filter-form__checkbox-icon"></span>
-                    <span class="filter-form__checkbox-label">сахарные присыпки</span>
+                    <span class="filter-form__checkbox-label">сахарные&nbsp;присыпки</span>
                   </label>
                 </li>
                 <li class="filter-form__fillers-item">
@@ -284,7 +306,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-1.png" width="267" height="267" alt="1-ая морожка">
+                  <img src="images/icecream-circle-1.png" alt="1-ая морожка">
                 </div>
                 <div class="products__price">
                   310
@@ -293,8 +315,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное с апельсиновым
-                    джемом и цитрусовой стружкой</span>
+                  <span class="products__link-content">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -304,7 +325,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-2.png" width="267" height="267" alt="2-ая морожка">
+                  <img src="images/icecream-circle-2.png" alt="2-ая морожка">
                 </div>
                 <div class="products__price">
                   380
@@ -313,8 +334,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочно-кофейное с кусочками
-                    шоколада</span>
+                  <span class="products__link-content">Сливочно-кофейное с&nbsp;кусочками шоколада</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -324,7 +344,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-3.png" width="267" height="267" alt="3-ая морожка">
+                  <img src="images/icecream-circle-3.png" alt="3-ая морожка">
                 </div>
                 <div class="products__price">
                   355
@@ -333,8 +353,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочно-клубничное с
-                    присыпкой из белого шоколада</span>
+                  <span class="products__link-content">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -344,7 +363,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-4.png" width="267" height="267" alt="4-ая морожка">
+                  <img src="images/icecream-circle-4.png" alt="4-ая морожка">
                 </div>
                 <div class="products__price">
                   415
@@ -353,8 +372,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное крем-брюле с
-                    карамельной подливкой</span>
+                  <span class="products__link-content">Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -364,7 +382,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-5.png" width="267" height="267" alt="1-ая морожка">
+                  <img src="images/icecream-circle-5.png" alt="5-ая морожка">
                 </div>
                 <div class="products__price">
                   325
@@ -373,8 +391,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное с брусничным
-                    джемом</span>
+                  <span class="products__link-content">Сливочное с&nbsp;брусничным джемом</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -384,7 +401,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-6.png" width="267" height="267" alt="2-ая морожка">
+                  <img src="images/icecream-circle-6.png" alt="6-ая морожка">
                 </div>
                 <div class="products__price">
                   410
@@ -393,8 +410,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочно-черничное с цельными
-                    ягодами черники</span>
+                  <span class="products__link-content">Сливочно-черничное с&nbsp;цельными ягодами черники</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -404,7 +420,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-7.png" width="267" height="267" alt="3-ая морожка">
+                  <img src="images/icecream-circle-7.png" alt="7-ая морожка">
                 </div>
                 <div class="products__price">
                   375
@@ -413,8 +429,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочно-лимонное с
-                    карамельной присыпкой</span>
+                  <span class="products__link-content">Сливочно-лимонное с&nbsp;карамельной присыпкой</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -424,7 +439,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-8.png" width="267" height="267" alt="4-ая морожка">
+                  <img src="images/icecream-circle-8.png" alt="8-ая морожка">
                 </div>
                 <div class="products__price">
                   320
@@ -433,8 +448,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное с шоколадной
-                    стружкой</span>
+                  <span class="products__link-content">Сливочное с&nbsp;шоколадной стружкой</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -444,7 +458,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-9.png" width="267" height="267" alt="1-ая морожка">
+                  <img src="images/icecream-circle-9.png" alt="9-ая морожка">
                 </div>
                 <div class="products__price">
                   440
@@ -453,8 +467,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочно-ванильное с
-                    кусочками шоколада</span>
+                  <span class="products__link-content">Сливочно-ванильное с&nbsp;кусочками шоколада</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -464,7 +477,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-10.png" width="267" height="267" alt="2-ая морожка">
+                  <img src="images/icecream-circle-10.png" alt="10-ая морожка">
                 </div>
                 <div class="products__price">
                   435
@@ -473,8 +486,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочноe с ментоловым
-                    сиропом</span>
+                  <span class="products__link-content">Сливочноe с&nbsp;ментоловым сиропом</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -484,7 +496,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-11.png" width="267" height="267" alt="3-ая морожка">
+                  <img src="images/icecream-circle-11.png" alt="11-ая морожка">
                 </div>
                 <div class="products__price">
                   355
@@ -493,8 +505,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное с кусочками черного
-                    шоколада</span>
+                  <span class="products__link-content">Сливочное с&nbsp;кусочками черного шоколада</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -504,7 +515,7 @@
             <div class="products__item products--top">
               <div class="products__preview">
                 <div class="products__image">
-                  <img src="images/icecream-circle-12.png" width="267" height="267" alt="4-ая морожка">
+                  <img src="images/icecream-circle-12.png" alt="12-ая морожка">
                 </div>
                 <div class="products__price">
                   420
@@ -513,7 +524,7 @@
               </div>
               <h3 class="products__title">
                 <a class="products__link" href="#">
-                  <span class="products__link-content">Сливочное с мятным сиропом</span>
+                  <span class="products__link-content">Сливочное с&nbsp;мятным сиропом</span>
                 </a>
               </h3>
               <div class="products__action">
@@ -554,8 +565,7 @@
         <!-- Секция с социальными ссылками изменена в названии. С social на liberal(kappa). В связи с тем, что github скрывает все блоки с таким названием -->
         <ul class="footer-liberal">
           <li>
-            <a class="footer-liberal__icon footer-liberal__icon--tw" href="https://twitter.com/_Red__Eagle_" target="_blank"
-              aria-label="Твиттер"></a>
+            <a class="footer-liberal__icon footer-liberal__icon--tw" href="https://twitter.com/_Red__Eagle_" target="_blank" aria-label="Твиттер"></a>
           </li>
           <li>
             <a class="footer-liberal__icon footer-liberal__icon--inst" href="https://www.instagram.com/our_event_horizon/"
@@ -566,27 +576,26 @@
               target="_blank" aria-label="Фейсбук"></a>
           </li>
           <li>
-            <a class="footer-liberal__icon footer-liberal__icon--vk" href="https://vk.com/no_luck_just_sk1l" target="_blank"
-              aria-label="Вконтакте"></a>
+            <a class="footer-liberal__icon footer-liberal__icon--vk" href="https://vk.com/no_luck_just_sk1l" target="_blank" aria-label="Вконтакте"></a>
           </li>
         </ul>
         <!-- /.footer-liberal -->
 
         <div class="footer-menu">
           <div class="footer-menu__col">
-            <a class="footer-menu__link" href="#"><b class="footer-menu__link-content">Для поставщиков</b></a>
-            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">О производстве</span></a>
+            <a class="footer-menu__link" href="#"><b class="footer-menu__link-content">Для&nbsp;поставщиков</b></a>
+            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">О&nbsp;производстве</span></a>
           </div>
           <div class="footer-menu__col">
-            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">Наши документы</span></a>
-            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">Экологические стандарты</span></a>
+            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">Наши&nbsp;документы</span></a>
+            <a class="footer-menu__link" href="#"><span class="footer-menu__link-content">Экологические&nbsp;стандарты</span></a>
           </div>
         </div>
         <!-- /.footer-menu -->
 
         <div class="footer-copyright">
           <img src="images/logo.png" width="46" height="40" alt="Логотип Light Boilerplate">
-          <p>Сделано с помощью <a href="https://redeagleap.github.io/light-boilerplate/" target="_blank">Light Boilerplate</a> &copy; 2019</p>
+          <p>Сделано с&nbsp;помощью <a href="https://redeagleap.github.io/light-boilerplate/" target="_blank">Light&nbsp;Boilerplate</a> &copy; 2019</p>
         </div>
         <!-- /.footer-copyright -->
       </footer>
@@ -597,6 +606,9 @@
   <!-- /.page-wrapper -->
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/snap.svg-min.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/burger-menu.js"></script>
 </body>
 
 </html>
