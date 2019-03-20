@@ -53,16 +53,17 @@
 
     &:first-child,
     &:last-child {
+      $root: '.pagination__arrow';
 
-      &:hover .pagination__arrow,
-      &:focus .pagination__arrow {
+      &:hover #{$root},
+      &:focus #{$root} {
         width: 10px;
         height: 14px;
         transition: all 0.05s e('out-cubic');
       }
 
-      &:hover .pagination__arrow--disabled,
-      &:focus .pagination__arrow--disabled {
+      &:hover #{$root}--disabled,
+      &:focus #{$root}--disabled {
         width: 8px;
         height: 12px;
         transition: none;

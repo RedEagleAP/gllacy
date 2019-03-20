@@ -1,6 +1,5 @@
 .contacts {
   position: relative;
-
   margin-bottom: rem(20px);
 
   max-width: 1200px;
@@ -8,7 +7,6 @@
 
   &__image {
     position: relative;
-
     margin-left: -2%;
 
     max-width: 104%;
@@ -19,7 +17,7 @@
     background-size: cover;
   }
 
-  .contacts__map {
+  &__map {
     display: block;
     position: absolute;
 
@@ -29,7 +27,7 @@
     width: 104%;
     min-height: 430px;
 
-    border: none;
+    border: 0;
     transform: translateX(-50%);
   }
 
@@ -56,31 +54,35 @@
       right: 4%;
       transform: translate(-4%, -50%);
     }
+
     @include break('sm', max) {
       right: 10%;
       transform: translate(-10%, -50%);
     }
+
     @include break(400px, max) {
       right: 6%;
       transform: translate(-6%, -50%);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
+
     @include break(360px, max) {
       right: 4%;
       transform: translate(-4%, -50%);
     }
+
     @include break(340px, max) {
       right: 1%;
       transform: translate(-1%, -50%);
     }
 
-    & p {
+    p {
       font-size: em(14px);
       font-weight: 400;
       line-height: em(20px, 14);
     }
 
-    & strong {
+    strong {
       font-size: em(18px);
       font-weight: 700;
       line-height: em(24px, 18);

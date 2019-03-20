@@ -2,15 +2,17 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     right: 0;
     height: 10px;
   }
 
-  &:hover .header__popup-wrap,
-  &:focus .header__popup-wrap {
+  $hpw: '.header__popup-wrap';
+
+  &:hover #{$hpw},
+  &:focus #{$hpw} {
     opacity: 1;
     transform: translate(0, 0);
     transition: all 0.25s ease('out-cubic');
@@ -20,27 +22,25 @@
 
 .basket-table {
   padding: rem(20px) rem(15px);
-
-  border-collapse: separate;
-
   width: 540px;
 
   font-size: rem(13px);
   line-height: em(16px, 13);
   font-weight: 400;
-
   color: $text-dark;
+
   background-color: $modal-bg;
   border-radius: em(3px, 13);
+  border-collapse: separate;
   box-shadow: $modal-box-shadow;
 
   cursor: default;
   z-index: 200;
 
   @include break('sm', max) {
-    padding: .8rem .5rem;
+    padding: 0.8rem 0.5rem;
     width: 310px;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   &__btn {
@@ -51,28 +51,27 @@
     width: 14px;
     height: 14px;
 
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+
     &--remove {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cpath fill='%23231F20' d='M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11'%3E%3Cpath fill='%23231F20' d='M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z'/%3E%3C/svg%3E");
     }
 
     &:hover,
-    &:focus{
+    &:focus {
       transform: rotate(360deg);
       transition: all 0.45s ease('out-cubic');
     }
   }
 
   &__item {
-
     &--total {
       text-align: right;
     }
@@ -137,9 +136,9 @@
       color: $btn-bg;
     }
 
-    &:hover .basket-table__link-content,
-    &:focus .basket-table__link-content,
-    &:active .basket-table__link-content {
+    &:hover &-content,
+    &:focus &-content,
+    &:active &-content {
       border-bottom: 1px solid rgba(232, 76, 55, 0.3);
     }
   }

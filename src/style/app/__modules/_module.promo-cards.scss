@@ -16,9 +16,6 @@
     padding: rem(23px) rem(20px);
 
     width: 48.86%;
-    @include break(780px, max) {
-      width: 100%;
-    }
     min-height: 229px;
 
     border-radius: 10px;
@@ -26,18 +23,25 @@
     background-size: cover;
     background-position: 50% 50%;
 
-    & h3 {
+    @include break(780px, max) {
+      width: 100%;
+    }
+
+    h3 {
       margin-bottom: rem(20px);
       font-size: rem(35px);
+
       @include break(382px, max) {
         font-size: 1.8rem;
       }
+
       line-height: em(41px, 35);
     }
 
-    & p {
+    p {
       margin-bottom: rem(45px);
       font-size: rem(18px);
+
       @include break(382px, max) {
         margin-bottom: rem(55px);
         font-size: rem(16px);
@@ -48,6 +52,7 @@
       @include break(780px, max) {
         margin-bottom: rem(20px);
       }
+
       background-color: #ac3030;
       background-image: url('../img/bitmaps/raspberry-bg.jpg');
     }

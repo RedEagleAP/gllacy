@@ -2,7 +2,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     right: 0;
@@ -12,6 +12,7 @@
   &__form {
     display: inline-block;
     padding: rem(20px) rem(15px);
+
     background-color: $modal-bg;
     box-shadow: $modal-box-shadow;
     border-radius: 3px;
@@ -22,8 +23,10 @@
     }
   }
 
-  &:hover .header__popup-wrap,
-  &:focus .header__popup-wrap {
+  $hwp: '.header__popup-wrap';
+
+  &:hover #{$hwp},
+  &:focus #{$hwp} {
     opacity: 1;
     transform: translate(0, 0);
     transition: all 0.25s ease('out-cubic');

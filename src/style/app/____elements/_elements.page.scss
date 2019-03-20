@@ -4,8 +4,9 @@
  |--------------------------------------------------------------------------
  */
 body {
+
   /* stylelint-disable */
-  .js &.no-hover > * {
+  .js &.no-hover>* {
     pointer-events: none;
   }
 
@@ -13,5 +14,6 @@ body {
     height: 100vh;
     overflow: hidden;
   }
+
   /* stylelint-enable */
 }

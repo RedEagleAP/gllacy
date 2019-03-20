@@ -5,19 +5,19 @@
 
   margin-bottom: rem(40px);
 
-  & input[type=text] {
+  input[type='text'] {
     font-size: rem(16px);
     line-height: em(18px, 16);
     font-weight: 500;
     font-family: $ff;
     color: $text-light;
 
-    border: none;
+    border: 0;
     background: none;
   }
 
-  & input[type=radio],
-  & input[type=checkbox] {
+  input[type='radio'],
+  input[type='checkbox'] {
     @include vh();
   }
 
@@ -36,7 +36,7 @@
     font-family: $ff;
     color: $text-light;
 
-    border: none;
+    border: 0;
     background-color: rgba(225, 255, 255, 0.2);
     border-radius: em(17px, 16);
   }
@@ -45,7 +45,7 @@
     position: absolute;
 
     top: -22px;
-    left: 0px;
+    left: 0;
 
     margin: 0;
     padding: 0 rem(15px);
@@ -74,7 +74,7 @@
     font-weight: 500;
     color: $text-light;
 
-    border: none;
+    border: 0;
     border-radius: 17px;
     background: transparent;
     cursor: pointer;
@@ -88,7 +88,7 @@
       display: none;
     }
 
-    & option {
+    option {
       margin: 0;
 
       padding-top: em(2px, 14);
@@ -100,7 +100,7 @@
       font-weight: 400;
       color: $text-dark;
 
-      border: none;
+      border: 0;
       background: #fff;
     }
 
@@ -120,8 +120,8 @@
       transition: all 0.25s e('out-cubic');
     }
 
-    &:hover+.filter-form__sort-icon {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5'%3E%3Cpath fill='%23000' d='M4.5 5L0 0h9z'/%3E%3C/svg%3E");
+    &:hover + &-icon {
+      background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5'%3E%3Cpath fill='%23000' d='M4.5 5L0 0h9z'/%3E%3C/svg%3E");
     }
   }
 
@@ -129,9 +129,11 @@
     position: absolute;
     top: 50%;
     right: 11px;
+
     width: 9px;
     height: 5px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5'%3E%3Cpath fill='%23FFF' d='M4.5 5L0 0h9z'/%3E%3C/svg%3E");
+
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 5'%3E%3Cpath fill='%23FFF' d='M4.5 5L0 0h9z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     transform: translateY(-50%);
     cursor: pointer;
@@ -144,7 +146,7 @@
 
     font-size: 0;
 
-    & input[type=text] {
+    input[type='text'] {
       display: none;
 
       margin: 0 rem(10px);
@@ -154,7 +156,7 @@
       width: 60px;
       height: 18px;
 
-      border: none;
+      border: 0;
       text-align: center;
     }
   }
@@ -170,14 +172,12 @@
 
   &__range-scale {
     position: absolute;
-
     top: 50%;
 
     width: 188px;
     height: 4px;
 
     margin-top: -2px;
-
     background-color: rgba(255, 255, 255, 0.5);
   }
 
@@ -191,7 +191,6 @@
     height: 4px;
 
     margin-top: -2px;
-
     background-color: #fff;
   }
 
@@ -210,7 +209,7 @@
     background-color: #f8f7f4;
     cursor: pointer;
     outline: none;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
     &--min {
@@ -265,21 +264,21 @@
 
     cursor: pointer;
 
-    & input[type="radio"]:checked+.filter-form__radio-icon::before {
+    input[type='radio']:checked + .filter-form__radio-icon::before {
       display: block;
     }
 
-    & input[type="radio"]:disabled+.filter-form__radio-icon {
+    input[type='radio']:disabled + .filter-form__radio-icon {
       opacity: 0.4;
     }
 
-    &:hover input[type="radio"]:not(:disabled)+.filter-form__radio-icon,
-    &:focus input[type="radio"]:not(:disabled)+.filter-form__radio-icon {
+    &:hover input[type='radio']:not(:disabled) + .filter-form__radio-icon,
+    &:focus input[type='radio']:not(:disabled) + .filter-form__radio-icon {
       border: 2px solid #fff;
       transition: all 0.1s e('out-cubic');
     }
 
-    & input[type="radio"]:disabled {
+    input[type='radio']:disabled {
       cursor: default;
     }
   }
@@ -350,8 +349,7 @@
 
     cursor: pointer;
 
-    & input[type="checkbox"]:checked+.filter-form__checkbox-icon {
-
+    input[type='checkbox']:checked + .filter-form__checkbox-icon {
       &::before {
         content: '';
         position: absolute;
@@ -362,24 +360,24 @@
         width: 27px;
         height: 23px;
 
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFF' d='M21 20c0 0.542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
 
         margin-top: -11.5px;
       }
     }
 
-    & input[type="checkbox"]:disabled+.filter-form__checkbox-icon {
+    input[type='checkbox']:disabled + .filter-form__checkbox-icon {
       opacity: 0.4;
     }
 
-    &:hover input[type="checkbox"]:not(:disabled)+.filter-form__checkbox-icon,
-    &:focus input[type="checkbox"]:not(:disabled)+.filter-form__checkbox-icon {
+    &:hover input[type='checkbox']:not(:disabled) + .filter-form__checkbox-icon,
+    &:focus input[type='checkbox']:not(:disabled) + .filter-form__checkbox-icon {
       border: 1px solid #fff;
       transition: all 0.1s e('out-cubic');
     }
 
-    & input[type="checkbox"]:disabled {
+    input[type='checkbox']:disabled {
       cursor: default;
     }
   }
@@ -438,9 +436,9 @@
 
     &:active {
       color: $text-dark;
-      border: none;
+      border: 0;
       background-color: #eaeaea;
-      box-shadow: inset 0px 2px 1px 0px #696969;
+      box-shadow: inset 0 2px 1px #696969;
       transition: all 0.25s e('out-cubic');
     }
   }

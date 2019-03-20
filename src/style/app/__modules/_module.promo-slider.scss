@@ -1,29 +1,37 @@
 .promo-slider {
   position: relative;
+
   padding-top: rem(310px);
   padding-bottom: rem(40px);
 
   @include break(710px, max) {
     padding-top: rem(406px);
   }
+
   @include break(600px, max) {
     padding-top: rem(374px);
   }
+
   @include break(500px, max) {
     padding-top: rem(342px);
   }
+
   @include break(450px, max) {
     padding-top: rem(294px);
   }
+
   @include break(400px, max) {
     padding-top: rem(264px);
   }
+
   @include break(370px, max) {
     padding-top: rem(248px);
   }
+
   @include break(345px, max) {
     padding-top: rem(232px);
   }
+
   @include break(325px, max) {
     padding-top: rem(220px);
   }
@@ -35,6 +43,7 @@
   &__slide {
     display: none;
     position: relative;
+
     text-align: center;
     transition: all 0.25s e('out-cubic');
 
@@ -45,15 +54,12 @@
 
   &__title {
     display: block;
-
-    margin: 0px auto rem(30px);
-
+    margin: 0 auto rem(30px);
     width: 675px;
 
     font-size: rem(60px);
     line-height: em(60.35px, 60);
     font-weight: 700;
-
     text-align: center;
 
     @include break(712px, max) {
@@ -72,10 +78,11 @@
 
   &__controls {
     position: absolute;
-    padding: 0 rem(25px);
 
-    bottom: 45px;
     left: 0;
+    bottom: 45px;
+
+    padding: 0 rem(25px);
 
     z-index: 120;
 
@@ -83,7 +90,7 @@
       bottom: 25px;
     }
 
-    & label {
+    label {
       display: inline-block;
       vertical-align: top;
 
@@ -95,26 +102,28 @@
       background-color: transparent;
       border: 2px solid #fff;
       border-radius: 50%;
-      cursor: pointer;
 
+      cursor: pointer;
       transition: all 0.15s e('in-cubic');
     }
 
-    & label:hover,
-    & label:focus {
+    label:hover,
+    label:focus {
       background-color: rgba(255, 255, 255, 0.4);
     }
 
-    & label:active {
+    label:active {
       background-color: #fff;
     }
   }
 
   &__btn {
     padding: em(17px, 32) em(43px, 32);
+
     font-size: rem(32px);
     line-height: em(32px, 32);
     font-weight: 700;
+
     border-radius: em(31px, 16);
 
     @include break(712px, max) {
@@ -131,36 +140,36 @@
   }
 }
 
-#btn-1:checked~.page-wrapper .promo-slider #promo-slide-1,
-#btn-2:checked~.page-wrapper .promo-slider #promo-slide-2,
-#btn-3:checked~.page-wrapper .promo-slider #promo-slide-3 {
+#btn-1:checked ~ .page-wrapper .promo-slider #promo-slide-1,
+#btn-2:checked ~ .page-wrapper .promo-slider #promo-slide-2,
+#btn-3:checked ~ .page-wrapper .promo-slider #promo-slide-3 {
   display: block;
 }
 
-#btn-1:checked~.page-wrapper .promo-slider label[for="btn-1"],
-#btn-2:checked~.page-wrapper .promo-slider label[for="btn-2"],
-#btn-3:checked~.page-wrapper .promo-slider label[for="btn-3"] {
+#btn-1:checked ~ .page-wrapper .promo-slider label[for="btn-1"],
+#btn-2:checked ~ .page-wrapper .promo-slider label[for="btn-2"],
+#btn-3:checked ~ .page-wrapper .promo-slider label[for="btn-3"] {
   background-color: #fff;
 }
 
-#btn-1:checked~.page-wrapper {
+#btn-1:checked ~ .page-wrapper {
   background-color: $body-bg__1;
-  background-image: url("../img/bitmaps/icecreams-first.png");
+  background-image: url('../img/bitmaps/icecreams-first.png');
 }
 
-#btn-2:checked~.page-wrapper {
+#btn-2:checked ~ .page-wrapper {
   background-color: $body-bg__2;
-  background-image: url("../img/bitmaps/icecreams-second.png");
+  background-image: url('../img/bitmaps/icecreams-second.png');
 }
 
-#btn-3:checked~.page-wrapper {
+#btn-3:checked ~ .page-wrapper {
   background-color: $body-bg__3;
-  background-image: url("../img/bitmaps/icecreams-third.png");
+  background-image: url('../img/bitmaps/icecreams-third.png');
 }
 
-#btn-1:checked~.page-wrapper,
-#btn-2:checked~.page-wrapper,
-#btn-3:checked~.page-wrapper {
+#btn-1:checked ~ .page-wrapper,
+#btn-2:checked ~ .page-wrapper,
+#btn-3:checked ~ .page-wrapper {
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -173,29 +182,28 @@
     background-position: center 25px;
   }
 }
-
 @include break(710px, max) {
-  #btn-1:checked~.page-wrapper .content-wrapper .header {
+  #btn-1:checked ~ .page-wrapper .content-wrapper .header {
     background-color: $body-bg__1;
   }
 
-  #btn-2:checked~.page-wrapper .content-wrapper .header {
+  #btn-2:checked ~ .page-wrapper .content-wrapper .header {
     background-color: $body-bg__2;
   }
 
-  #btn-3:checked~.page-wrapper .content-wrapper .header {
+  #btn-3:checked ~ .page-wrapper .content-wrapper .header {
     background-color: $body-bg__3;
   }
 
-  #btn-1:checked~.page-wrapper .morph-shape--show {
+  #btn-1:checked ~ .page-wrapper .morph-shape--show {
     fill: $body-bg__1;
   }
 
-  #btn-2:checked~.page-wrapper .morph-shape--show {
+  #btn-2:checked ~ .page-wrapper .morph-shape--show {
     fill: $body-bg__2;
   }
 
-  #btn-3:checked~.page-wrapper .morph-shape--show {
+  #btn-3:checked ~ .page-wrapper .morph-shape--show {
     fill: $body-bg__3;
   }
 }
